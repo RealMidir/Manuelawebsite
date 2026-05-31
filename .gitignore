@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lokale Screenshot-/Debug-Artefakte
+_shot.mjs
+_full.png
+_sec_*.png

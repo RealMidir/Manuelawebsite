@@ -5,6 +5,7 @@ import Image from "next/image";
  * per Blend-Mode entfernen wir den weißen Hintergrund:
  *  - auf hellem Grund:  mix-blend-multiply  (Tinte bleibt dunkel)
  *  - auf dunklem Grund: invert + screen     (Tinte wird hell)
+ * Die gerenderte Breite wird per inline-style erzwungen (height: auto hält das Seitenverhältnis).
  */
 export function Signature({
   on = "light",
@@ -17,8 +18,8 @@ export function Signature({
 }) {
   const blend =
     on === "dark"
-      ? "[filter:invert(1)_brightness(1.6)] mix-blend-screen opacity-90"
-      : "mix-blend-multiply opacity-80";
+      ? "[filter:invert(1)_brightness(1.7)] mix-blend-screen opacity-90"
+      : "mix-blend-multiply opacity-70";
 
   return (
     <Image
@@ -27,7 +28,8 @@ export function Signature({
       width={width}
       height={Math.round(width * 0.52)}
       draggable={false}
-      className={`h-auto w-auto select-none ${blend} ${className}`}
+      style={{ width: `${width}px`, height: "auto" }}
+      className={`max-w-full select-none ${blend} ${className}`}
       priority
     />
   );
