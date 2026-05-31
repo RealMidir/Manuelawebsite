@@ -1,0 +1,4 @@
+# pnpm 11: native Build-Scripts bewusst deaktiviert (brauchen wir nicht).
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
