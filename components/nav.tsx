@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Logo } from "@/components/ui/logo";
 
 const links = [
+  { label: "Düfte", href: "#duefte" },
+  { label: "Partnerin werden", href: "#partnerin" },
   { label: "Über mich", href: "#ueber" },
-  { label: "Philosophie", href: "#philosophie" },
-  { label: "Angebot", href: "#angebot" },
   { label: "Stimmen", href: "#stimmen" },
-  { label: "Kontakt", href: "#kontakt" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -29,24 +29,21 @@ export function Nav() {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
           scrolled
-            ? "border-b border-greige/25 bg-cream/80 backdrop-blur-md"
+            ? "border-b border-greige/25 bg-cream/85 backdrop-blur-md"
             : "border-b border-transparent bg-transparent"
         }`}
       >
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:h-24 md:px-10">
-          <a
-            href="#top"
-            className="font-display text-2xl font-medium tracking-[0.04em] text-espresso md:text-[1.7rem]"
-          >
-            Manuela
+          <a href="#top" aria-label="Manuela × Chogan">
+            <Logo variant="compact" />
           </a>
 
-          <nav className="hidden items-center gap-10 md:flex">
+          <nav className="hidden items-center gap-9 md:flex">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="link-underline text-[0.72rem] font-normal uppercase tracking-[0.22em] text-espresso/80 transition-colors hover:text-espresso"
+                className="link-underline text-[0.82rem] font-medium text-espresso/80 transition-colors hover:text-espresso"
               >
                 {l.label}
               </a>
@@ -54,10 +51,10 @@ export function Nav() {
           </nav>
 
           <a
-            href="#kontakt"
-            className="hidden items-center rounded-full border border-espresso/60 px-6 py-2.5 text-[0.68rem] uppercase tracking-[0.24em] text-espresso transition-colors duration-500 hover:bg-espresso hover:text-ivory md:inline-flex"
+            href="#termin"
+            className="hidden items-center gap-2 rounded-[2px] border border-espresso/45 px-5 py-2.5 font-mono text-[0.62rem] uppercase tracking-[0.2em] text-espresso transition-colors duration-500 hover:bg-espresso hover:text-ivory md:inline-flex"
           >
-            Erstgespräch
+            Termin <span aria-hidden>→</span>
           </a>
 
           <button
@@ -81,13 +78,11 @@ export function Nav() {
             className="fixed inset-0 z-[60] flex flex-col bg-cream px-6 pb-12 pt-7 md:hidden"
           >
             <div className="flex items-center justify-between">
-              <span className="font-display text-2xl font-medium text-espresso">
-                Manuela
-              </span>
+              <Logo variant="compact" />
               <button
                 aria-label="Menü schließen"
                 onClick={() => setOpen(false)}
-                className="text-[0.72rem] uppercase tracking-[0.24em] text-espresso/70"
+                className="font-mono text-[0.66rem] uppercase tracking-[0.22em] text-espresso/70"
               >
                 Schließen
               </button>
@@ -110,11 +105,11 @@ export function Nav() {
             </nav>
 
             <a
-              href="#kontakt"
+              href="#termin"
               onClick={() => setOpen(false)}
-              className="mt-10 inline-flex w-fit items-center rounded-full bg-espresso px-8 py-3.5 text-[0.7rem] uppercase tracking-[0.24em] text-ivory"
+              className="btn btn-primary mt-10 w-fit"
             >
-              Kostenloses Erstgespräch
+              Termin sichern <span className="arrow" aria-hidden>→</span>
             </a>
           </motion.div>
         )}

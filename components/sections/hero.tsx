@@ -2,17 +2,17 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import { Signature } from "@/components/ui/signature";
+import { Button } from "@/components/ui/button";
+import { PlaceholderImage } from "@/components/ui/placeholder-image";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
-
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.14, delayChildren: 0.25 } },
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } },
 };
 const up = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 1.15, ease: EASE } },
+  hidden: { opacity: 0, y: 26 },
+  show: { opacity: 1, y: 0, transition: { duration: 1.05, ease: EASE } },
 };
 
 export function Hero() {
@@ -21,108 +21,81 @@ export function Hero() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const yText = useTransform(scrollYProgress, [0, 1], [0, 130]);
-  const yGlow = useTransform(scrollYProgress, [0, 1], [0, -90]);
-  const yMark = useTransform(scrollYProgress, [0, 1], [0, 80]);
-  const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+  const yImg = useTransform(scrollYProgress, [0, 1], [0, 70]);
 
   return (
     <section
       id="top"
       ref={ref}
-      className="pearl relative flex min-h-[100svh] items-center justify-center overflow-hidden"
+      className="relative bg-cream pb-20 pt-28 md:pb-0 md:pt-0"
     >
-      {/* weiche Perlmutt-Lichter mit Parallax */}
-      <motion.div
-        style={{ y: yGlow }}
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-      >
-        <div className="absolute -left-24 top-20 h-80 w-80 rounded-full bg-white/50 blur-3xl" />
-        <div className="absolute right-[-4rem] top-1/3 h-[26rem] w-[26rem] rounded-full bg-oatmeal/40 blur-3xl" />
-        <div className="absolute bottom-4 left-1/3 h-72 w-72 rounded-full bg-taupe/20 blur-3xl" />
-      </motion.div>
-
-      {/* riesige, blasse Initiale */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden">
-        <motion.span
-          style={{ y: yMark }}
-          aria-hidden
-          className="select-none font-display text-[44vw] leading-none text-white/30 mix-blend-soft-light"
+      <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-6 md:min-h-screen md:grid-cols-12 md:gap-16 md:px-10">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="md:col-span-7 md:pt-24 lg:col-span-6"
         >
-          M
-        </motion.span>
-      </div>
+          <motion.p variants={up} className="eyebrow">
+            Düfte · Business · Mentoring
+          </motion.p>
 
-      {/* Inhalt */}
-      <motion.div
-        style={{ y: yText, opacity: fade }}
-        variants={container}
-        initial="hidden"
-        animate="show"
-        className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center"
-      >
-        <motion.div variants={up}>
-          <Signature on="light" width={148} className="mb-9" />
+          <motion.h1
+            variants={up}
+            className="display-balance mt-6 font-display text-[clamp(2.6rem,6.1vw,5.1rem)] font-medium leading-[1.03] tracking-[-0.01em] text-espresso"
+          >
+            Düfte verkaufen, Frauen{" "}
+            <span className="font-normal italic text-clay">stärken</span>,{" "}
+            <span className="font-normal italic text-clay">frei leben</span>.
+          </motion.h1>
+
+          <motion.p
+            variants={up}
+            className="text-pretty mt-7 max-w-md text-[1.02rem] leading-relaxed text-mushroom"
+          >
+            Ich helfe dir, mit Chogan-Düften ein eigenes Business aufzubauen —
+            Schritt für Schritt, ohne Verkaufsdruck, mit echtem Wissen.
+          </motion.p>
+
+          <motion.div
+            variants={up}
+            className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
+          >
+            <Button href="#partnerin" variant="primary">
+              Partnerin werden
+            </Button>
+            <Button href="#duefte" variant="outline">
+              Düfte entdecken
+            </Button>
+          </motion.div>
+
+          <motion.p variants={up} className="mono-label mt-10 text-clay/70">
+            Kein Risiko · Keine Mindestabnahme · In deinem Tempo
+          </motion.p>
         </motion.div>
-
-        <motion.p variants={up} className="eyebrow">
-          Skillset · Mindset · Heartset
-        </motion.p>
-
-        <motion.h1
-          variants={up}
-          className="display-balance mt-7 font-display text-[clamp(2.9rem,8.6vw,7.5rem)] font-light leading-[0.98] tracking-[-0.01em] text-espresso"
-        >
-          Werde, wer du{" "}
-          <span className="font-normal italic text-clay">wirklich</span> bist.
-        </motion.h1>
-
-        <motion.p
-          variants={up}
-          className="text-pretty mt-8 max-w-xl text-base font-light leading-relaxed text-mushroom md:text-lg"
-        >
-          Mentoring für Frauen, die mit Klarheit und Leichtigkeit wachsen — und
-          ein Leben gestalten, das sich endlich nach ihnen selbst anfühlt.
-        </motion.p>
 
         <motion.div
-          variants={up}
-          className="mt-11 flex flex-col items-center gap-6 sm:flex-row"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.3, ease: EASE }}
+          className="relative md:col-span-5 md:pt-24 lg:col-start-8"
         >
-          <a
-            href="#kontakt"
-            className="inline-flex items-center rounded-full bg-espresso px-9 py-4 text-[0.7rem] uppercase tracking-[0.24em] text-ivory transition-colors duration-500 hover:bg-clay"
-          >
-            Kostenloses Erstgespräch
-          </a>
-          <a
-            href="#ueber"
-            className="link-underline text-[0.72rem] uppercase tracking-[0.22em] text-espresso"
-          >
-            Mehr über mich →
-          </a>
-        </motion.div>
-      </motion.div>
+          <motion.div style={{ y: yImg }}>
+            <PlaceholderImage
+              aspect="4 / 5"
+              tone="linen"
+              label="Parfum-Flakon auf warmem Marmor"
+            />
+          </motion.div>
 
-      {/* Scroll-Hinweis */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.7, duration: 1 }}
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
-      >
-        <span className="text-[0.6rem] uppercase tracking-[0.3em] text-clay">
-          Scrollen
-        </span>
-        <span className="relative block h-12 w-px overflow-hidden bg-greige/30">
-          <motion.span
-            className="absolute inset-x-0 top-0 block h-1/2 bg-clay"
-            animate={{ y: ["-100%", "220%"] }}
-            transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </span>
-      </motion.div>
+          <div className="absolute -bottom-5 -left-5 hidden max-w-[15rem] border border-greige/30 bg-cream p-5 shadow-[0_24px_60px_-40px_rgba(58,50,43,0.45)] md:block">
+            <p className="eyebrow">Markenkredo</p>
+            <p className="mt-2 font-display text-lg italic leading-snug text-espresso">
+              „Düfte, die erinnern. Frauen, die wachsen."
+            </p>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }

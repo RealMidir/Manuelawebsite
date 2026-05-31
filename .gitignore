@@ -44,3 +44,9 @@ next-env.d.ts
 _shot.mjs
 _full.png
 _sec_*.png
+
+# weitere lokale Debug-Artefakte
+_live.mjs
+_live_*.png
+_render_pdf.py
+_styleguide/

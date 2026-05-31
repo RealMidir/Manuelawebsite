@@ -1,33 +1,40 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Lora, Manrope, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/smooth-scroll";
 import { Grain } from "@/components/ui/grain";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/sections/footer";
 
-const cormorant = Cormorant_Garamond({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-cormorant",
-  weight: ["300", "400", "500", "600"],
+  variable: "--font-lora",
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
 });
 
-const jost = Jost({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-jost",
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const jbmono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jbmono",
+  weight: ["400", "500"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Manuela — Skillset, Mindset & Heartset",
+  title: "Manuela × Chogan — Düfte. Beauty. Business.",
   description:
-    "Persönliche Entwicklung mit Eleganz. Mentoring, Klarheit und Inspiration für Frauen, die mit Leichtigkeit wachsen und ein selbstbestimmtes Leben gestalten wollen.",
+    "Persönliche Duftberatung mit Chogan – und Mentoring für Frauen, die ein eigenes Business aufbauen wollen. Schritt für Schritt, ohne Verkaufsdruck, mit echtem Wissen.",
   openGraph: {
-    title: "Manuela — Skillset, Mindset & Heartset",
+    title: "Manuela × Chogan — Düfte. Beauty. Business.",
     description:
-      "Persönliche Entwicklung mit Eleganz. Mentoring, Klarheit und Inspiration für ein selbstbestimmtes Leben.",
+      "Düfte verkaufen, Frauen stärken, frei leben. Duftberatung & Chogan-Partnerin-Mentoring.",
     type: "website",
     locale: "de_DE",
   },
@@ -39,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${cormorant.variable} ${jost.variable} antialiased`}
+      className={`${lora.variable} ${manrope.variable} ${jbmono.variable} antialiased`}
     >
       <body className="min-h-screen">
         <SmoothScroll>

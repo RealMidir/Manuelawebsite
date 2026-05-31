@@ -1,9 +1,9 @@
 import { Hero } from "@/components/sections/hero";
 import { Marquee } from "@/components/sections/marquee";
+import { Duefte } from "@/components/sections/duefte";
+import { Partnerin } from "@/components/sections/partnerin";
 import { About } from "@/components/sections/about";
-import { Philosophy } from "@/components/sections/philosophy";
 import { Statement } from "@/components/sections/statement";
-import { Offer } from "@/components/sections/offer";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Newsletter } from "@/components/sections/newsletter";
 import { Contact } from "@/components/sections/contact";
@@ -13,16 +13,13 @@ export default function Home() {
     <>
       <Hero />
       <Marquee />
+      <Duefte />
+      <Partnerin />
       <About />
-      <Philosophy />
       <Statement>
-        Authenticity is <span className="italic">magnetic.</span>
+        Düfte. Beauty. <span className="italic text-clay">Business.</span>
       </Statement>
-      <Offer />
       <Testimonials />
-      <Statement tone="linen">
-        Privacy is the new <span className="italic">luxury.</span>
-      </Statement>
       <Newsletter />
       <Contact />
     </>

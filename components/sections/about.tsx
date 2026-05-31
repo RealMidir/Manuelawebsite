@@ -1,12 +1,7 @@
 import { Reveal } from "@/components/ui/reveal";
-import { Signature } from "@/components/ui/signature";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 
-const stats = [
-  { value: "2018", label: "Start meiner Reise" },
-  { value: "500+", label: "begleitete Frauen" },
-  { value: "1:1", label: "persönliches Mentoring" },
-];
+const trust = ["Wissen vor Werbung", "Kein Verkaufsdruck", "In deinem Tempo"];
 
 export function About() {
   return (
@@ -16,8 +11,8 @@ export function About() {
           <Reveal>
             <PlaceholderImage
               aspect="4 / 5"
-              initial="M"
-              label="Manuela · Portrait folgt"
+              tone="linen"
+              label="Manuela · Porträt folgt"
             />
           </Reveal>
         </div>
@@ -27,60 +22,49 @@ export function About() {
             <p className="eyebrow">Über mich</p>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="display-balance mt-6 font-display text-[clamp(2.2rem,4.6vw,3.6rem)] font-light leading-[1.05] text-espresso">
-              Schön, dass du <span className="italic text-clay">hier</span> bist.
+            <h2 className="display-balance mt-6 font-display text-[clamp(2.1rem,4.6vw,3.6rem)] font-medium leading-[1.05] text-espresso">
+              Ich erkläre. Ich <span className="italic text-clay">überrede</span>{" "}
+              nicht.
             </h2>
           </Reveal>
 
           <div className="mt-8 max-w-xl space-y-5 text-[1.02rem] font-light leading-relaxed text-mushroom">
             <Reveal delay={0.1}>
               <p>
-                Ich bin Manuela — und ich glaube daran, dass wahre Stärke leise
-                ist. Dass Erfolg nicht laut sein muss, um spürbar zu sein.
+                Ich bin Manuela — Chogan-Partnerin &amp; Mentorin. Ich glaube an
+                Düfte, die man nicht erklären muss, und an ein Business, das sich
+                ehrlich anfühlt.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
               <p>
-                Seit Jahren begleite ich Frauen dabei, ihre eigene Klarheit zu
-                finden — jenseits von Druck, Perfektion und dem ständigen „Mehr".
-                Mein Weg hat mich gelehrt, dass Wachstum dann gelingt, wenn es
-                sich nach dir selbst anfühlt.
+                Statt Superlativen bekommst du konkrete Empfehlungen: welcher
+                Duft 8–10 Stunden hält, welcher zu dir passt — und wie du, wenn
+                du magst, selbst eines aufbaust.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-espresso">
-                <span className="font-display text-xl italic">Skillset</span> gab
-                mir die Werkzeuge.{" "}
-                <span className="font-display text-xl italic">Mindset</span> trug
-                mich durch die schweren Tage. Doch erst{" "}
-                <span className="font-display text-xl italic">Heartset</span>{" "}
-                zeigte mir, wofür ich das alles tue.
+              <p className="border-l-2 border-clay/40 pl-5 font-display text-xl italic leading-snug text-espresso">
+                „Qualität entsteht da, wo jemand verstanden hat, was sie
+                ausmacht — und es weitergibt, ohne sich wichtig zu machen."
               </p>
             </Reveal>
           </div>
 
           <Reveal delay={0.25}>
-            <div className="mt-9">
-              <Signature on="light" width={158} />
-              <p className="mt-2 text-[0.7rem] uppercase tracking-[0.24em] text-clay">
-                Manuela · Mentorin &amp; Gründerin
-              </p>
-            </div>
+            <p className="mono-label mt-8 text-clay">
+              Manuela — Chogan Partnerin &amp; Mentorin
+            </p>
           </Reveal>
 
           <Reveal delay={0.3}>
-            <div className="mt-10 grid grid-cols-3 gap-6 border-t border-greige/25 pt-8">
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <p className="font-display text-3xl font-light text-espresso">
-                    {s.value}
-                  </p>
-                  <p className="mt-1 text-[0.66rem] uppercase tracking-[0.16em] text-clay">
-                    {s.label}
-                  </p>
-                </div>
+            <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-greige/25 pt-7">
+              {trust.map((t) => (
+                <li key={t} className="mono-label text-mushroom">
+                  — {t}
+                </li>
               ))}
-            </div>
+            </ul>
           </Reveal>
         </div>
       </div>

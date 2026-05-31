@@ -3,17 +3,21 @@ import type { ReactNode } from "react";
 
 export function Statement({
   children,
-  tone = "cream",
+  tone = "noir",
 }: {
   children: ReactNode;
-  tone?: "cream" | "linen";
+  tone?: "noir" | "cream";
 }) {
-  const bg = tone === "linen" ? "bg-linen/50" : "bg-cream";
+  const dark = tone === "noir";
   return (
-    <section className={`${bg} py-28 md:py-44`}>
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className={dark ? "bg-noir py-28 md:py-44" : "bg-cream py-24 md:py-36"}>
+      <div className="mx-auto max-w-5xl px-6 text-center">
         <Reveal>
-          <p className="emboss font-display text-[clamp(2.3rem,6vw,5rem)] font-light leading-[1.12]">
+          <p
+            className={`font-display text-[clamp(2.4rem,7vw,5.5rem)] font-medium leading-[1.06] ${
+              dark ? "text-ivory" : "text-espresso"
+            }`}
+          >
             {children}
           </p>
         </Reveal>

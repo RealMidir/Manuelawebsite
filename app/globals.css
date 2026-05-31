@@ -1,29 +1,32 @@
 @import "tailwindcss";
 
 /* ============================================================
-   MANUELA — Quiet Luxury Design System
-   Palette: warme Neutraltöne (Pantone-Moodboard) + Perlmutt
+   MANUELA × CHOGAN — Style Guide v0.1
+   „Leise luxuriös" · Lora (Stimme) + Manrope (Struktur) + JetBrains Mono (Labels)
+   Farben: warme Neutraltöne (Paper/Beige/Schwarz) — ruhig, flach, klar.
    ============================================================ */
 @theme {
   --color-ivory:     #FBF8F2;
-  --color-cream:     #F4EFE6;
+  --color-cream:     #F7F1E7;   /* „Paper" – Standard-BG */
   --color-vanilla:   #F3ECD9;
   --color-coconut:   #F1EEE6;
   --color-seasalt:   #ECE1D8;
   --color-jetstream: #EAE3DB;
-  --color-linen:     #E6DFD3;
-  --color-oatmeal:   #D7CEC1;
+  --color-linen:     #E6DCCB;   /* „Beige" – Cards, Bildflächen */
+  --color-oatmeal:   #DACFBC;
   --color-rainy:     #CFC8BD;
   --color-taupe:     #AF9C8E;
   --color-stone:     #A39C93;
   --color-greige:    #9D8B76;
-  --color-clay:      #897767;
+  --color-clay:      #897767;   /* warmer Akzent (statt Gold) */
   --color-mushroom:  #6B645B;
-  --color-espresso:  #43392F;
-  --color-ink:       #2B251F;
+  --color-espresso:  #3A322B;
+  --color-ink:       #241F1A;
+  --color-noir:      #16120F;   /* „Schwarz" – Statement/Footer */
 
-  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
-  --font-sans:    var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-lora), Georgia, "Times New Roman", serif;
+  --font-sans:    var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:    var(--font-jbmono), ui-monospace, "JetBrains Mono", monospace;
 
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -37,16 +40,15 @@ body {
   background-color: var(--color-cream);
   color: var(--color-espresso);
   font-family: var(--font-sans);
-  font-weight: 300;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
-::selection { background: var(--color-taupe); color: var(--color-ivory); }
+::selection { background: var(--color-clay); color: var(--color-ivory); }
 
-/* Custom scrollbar — fein & dezent */
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-track { background: var(--color-cream); }
 ::-webkit-scrollbar-thumb {
@@ -55,66 +57,72 @@ body {
   border: 2px solid var(--color-cream);
 }
 
-/* ---------- Typo-Helfer ---------- */
+/* ---------- Labels / Eyebrows (JetBrains Mono, UPPERCASE) ---------- */
 .eyebrow {
+  font-family: var(--font-mono);
   text-transform: uppercase;
-  letter-spacing: 0.34em;
-  font-size: 0.7rem;
-  font-weight: 400;
+  letter-spacing: 0.28em;
+  font-size: 0.66rem;
+  font-weight: 500;
   color: var(--color-clay);
+}
+.mono-label {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.6rem;
+  font-weight: 500;
 }
 
 .display-balance { text-wrap: balance; }
 .text-pretty { text-wrap: pretty; }
 
-/* Embossed / Letterpress — wie in den Tagline-Karten, ins Papier geprägt */
-.emboss {
-  color: color-mix(in srgb, var(--color-cream) 88%, var(--color-taupe));
-  text-shadow:
-    0 1px 0 rgba(255, 253, 248, 0.9),
-    0 -1px 1px rgba(120, 104, 88, 0.32),
-    0 2px 4px rgba(120, 104, 88, 0.10);
+/* ---------- Buttons („Konvertieren mit Anstand") ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  border-radius: 2px;
+  transition: background-color 0.5s var(--ease-luxe), color 0.5s var(--ease-luxe),
+    border-color 0.5s var(--ease-luxe), transform 0.5s var(--ease-luxe);
 }
-
-/* Perlmutt-Schimmer (Pantone „Metallic Shimmers") */
-@keyframes shimmer { to { background-position: 200% center; } }
-.shimmer {
-  background: linear-gradient(
-    100deg,
-    var(--color-greige) 0%, #ffffff 22%, var(--color-stone) 42%,
-    #fffaf2 58%, var(--color-taupe) 80%, var(--color-greige) 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shimmer 8s linear infinite;
+.btn-primary { background: var(--color-ink); color: var(--color-ivory); }
+.btn-primary:hover { background: var(--color-espresso); }
+.btn-outline {
+  border: 1px solid color-mix(in srgb, var(--color-espresso) 45%, transparent);
+  color: var(--color-espresso);
 }
+.btn-outline:hover { background: var(--color-espresso); color: var(--color-ivory); }
+.btn-ghost { color: var(--color-espresso); padding-left: 0; padding-right: 0; }
+.btn-ghost:hover { color: var(--color-clay); }
+.btn .arrow { transition: transform 0.5s var(--ease-luxe); }
+.btn:hover .arrow { transform: translateX(4px); }
 
-/* Film-Grain Overlay (Papierkorn) */
-.grain {
-  position: fixed;
-  inset: 0;
-  z-index: 70;
-  pointer-events: none;
-  opacity: 0.045;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 160px 160px;
+/* ---------- Badges (Status & Kategorie) ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.58rem;
+  font-weight: 500;
+  padding: 0.34rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-greige) 45%, transparent);
+  color: var(--color-mushroom);
 }
+.badge-solid { background: var(--color-ink); color: var(--color-ivory); border-color: transparent; }
 
-/* Marquee */
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 42s linear infinite;
-}
+/* ---------- Hairlines & Links ---------- */
+.hairline { border-color: color-mix(in srgb, var(--color-greige) 30%, transparent); }
 
-/* Hairline-Rahmen */
-.hairline { border-color: color-mix(in srgb, var(--color-greige) 32%, transparent); }
-
-/* Link-Unterstreichung von links nach rechts beim Hover */
 .link-underline { position: relative; }
 .link-underline::after {
   content: "";
@@ -126,16 +134,23 @@ body {
 }
 .link-underline:hover::after { transform: scaleX(1); transform-origin: left; }
 
-/* Sanfter Edelstein/Perlmutt-Verlauf für Flächen */
-.pearl {
-  background:
-    radial-gradient(120% 90% at 12% 8%, rgba(255,255,255,0.85), transparent 42%),
-    radial-gradient(120% 120% at 88% 18%, rgba(207,200,189,0.55), transparent 50%),
-    radial-gradient(140% 120% at 75% 92%, rgba(175,156,142,0.40), transparent 55%),
-    linear-gradient(135deg, var(--color-ivory), var(--color-jetstream) 55%, var(--color-oatmeal));
+/* ---------- Marquee ---------- */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { display: flex; width: max-content; animation: marquee 46s linear infinite; }
+
+/* ---------- Film-Grain (Papierkorn, dezent) ---------- */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .shimmer, .marquee-track { animation: none !important; }
+  .marquee-track { animation: none !important; }
   html { scroll-behavior: auto; }
 }
