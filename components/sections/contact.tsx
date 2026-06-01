@@ -8,7 +8,7 @@ export function Contact() {
   const { t } = useLang();
   const c = t.contact;
   return (
-    <section id="kontakt" className="scroll-mt-24 bg-cream pb-24 pt-36 md:pb-32 md:pt-44">
+    <section id="kontakt" className="scroll-mt-24 bg-cream py-24 md:py-36">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <Reveal>
           <p className="eyebrow">{t.pages.kontakt.eyebrow}</p>

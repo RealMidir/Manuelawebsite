@@ -8,7 +8,7 @@ export function About() {
   const { t } = useLang();
   const a = t.about;
   return (
-    <section id="ueber" className="scroll-mt-24 bg-cream pb-24 pt-36 md:pb-36 md:pt-44">
+    <section id="ueber" className="scroll-mt-24 bg-cream py-24 md:py-36">
       <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-6 md:grid-cols-12 md:gap-20 md:px-10">
         <div className="md:col-span-5">
           <Reveal>

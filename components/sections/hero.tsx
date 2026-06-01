@@ -65,10 +65,10 @@ export function Hero() {
             variants={up}
             className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
-            <Button href="/partnerin" variant="primary">
+            <Button href="#partnerin" variant="primary">
               {h.cta1}
             </Button>
-            <Button href="/duefte" variant="outline">
+            <Button href="#duefte" variant="outline">
               {h.cta2}
             </Button>
           </motion.div>

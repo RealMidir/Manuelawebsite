@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 import { useLang } from "@/lib/i18n";
 
@@ -27,12 +26,12 @@ export function Footer() {
             <ul className="mt-6 space-y-3">
               {t.nav.links.map((l) => (
                 <li key={l.href}>
-                  <Link
+                  <a
                     href={l.href}
                     className="link-underline text-[0.92rem] font-light text-ivory/75 transition-colors hover:text-ivory"
                   >
                     {l.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

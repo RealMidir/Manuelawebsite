@@ -1,8 +1,30 @@
 "use client";
 
-import { ReactLenis } from "lenis/react";
-import { useEffect, useState } from "react";
-import type { ReactNode } from "react";
+import { ReactLenis, useLenis } from "lenis/react";
+import { useEffect, useState, type ReactNode } from "react";
+
+/** Fängt Klicks auf #anchor-Links ab und scrollt sanft (Lenis) zum Ziel. */
+function AnchorScroll() {
+  const lenis = useLenis();
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      const a = target?.closest?.('a[href^="#"]') as HTMLAnchorElement | null;
+      if (!a) return;
+      const href = a.getAttribute("href");
+      if (!href || href.length < 2) return;
+      const el = document.querySelector(href);
+      if (!el) return;
+      e.preventDefault();
+      if (lenis) lenis.scrollTo(el as HTMLElement, { offset: -88 });
+      else (el as HTMLElement).scrollIntoView({ behavior: "smooth" });
+      history.replaceState(null, "", href);
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [lenis]);
+  return null;
+}
 
 export default function SmoothScroll({ children }: { children: ReactNode }) {
   // Erlaubt ?nolenis (für Screenshots/Tests): natives Scrollen statt Lenis.
@@ -24,6 +46,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
         touchMultiplier: 1.6,
       }}
     >
+      <AnchorScroll />
       {children}
     </ReactLenis>
   );

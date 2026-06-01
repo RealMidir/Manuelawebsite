@@ -8,7 +8,7 @@ export function Partnerin() {
   const { t } = useLang();
   const p = t.partnerin;
   return (
-    <section id="partnerin" className="scroll-mt-24 bg-linen/40 pb-24 pt-36 md:pb-36 md:pt-44">
+    <section id="partnerin" className="scroll-mt-24 bg-linen/40 py-24 md:py-36">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
@@ -52,7 +52,7 @@ export function Partnerin() {
 
         <Reveal delay={0.1}>
           <div className="mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <Button href="/kontakt" variant="primary">
+            <Button href="#termin" variant="primary">
               {p.cta}
             </Button>
             <span className="mono-label text-clay/70">{p.ctaNote}</span>

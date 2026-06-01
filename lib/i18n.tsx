@@ -16,10 +16,10 @@ export type Lang = "de" | "en";
 const de = {
   nav: {
     links: [
-      { label: "Düfte", href: "/duefte" },
-      { label: "Partnerin werden", href: "/partnerin" },
-      { label: "Über mich", href: "/ueber" },
-      { label: "Kontakt", href: "/kontakt" },
+      { label: "Düfte", href: "#duefte" },
+      { label: "Partnerin werden", href: "#partnerin" },
+      { label: "Über mich", href: "#ueber" },
+      { label: "Kontakt", href: "#kontakt" },
     ],
     cta: "Termin",
   },
@@ -129,10 +129,10 @@ const de = {
 const en: typeof de = {
   nav: {
     links: [
-      { label: "Fragrances", href: "/duefte" },
-      { label: "Become a partner", href: "/partnerin" },
-      { label: "About me", href: "/ueber" },
-      { label: "Contact", href: "/kontakt" },
+      { label: "Fragrances", href: "#duefte" },
+      { label: "Become a partner", href: "#partnerin" },
+      { label: "About me", href: "#ueber" },
+      { label: "Contact", href: "#kontakt" },
     ],
     cta: "Book a call",
   },
