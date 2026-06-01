@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 import { useLang } from "@/lib/i18n";
+import { INSTAGRAM_URL, EMAIL } from "@/lib/links";
 
 const social = [
-  { label: "Instagram", href: "https://instagram.com/manuela.chogan" },
-  { label: "E-Mail", href: "mailto:hallo@manuela-chogan.de" },
+  { label: "Instagram", href: INSTAGRAM_URL },
+  { label: "E-Mail", href: `mailto:${EMAIL}` },
 ];
 
 export function Footer() {
@@ -26,12 +28,12 @@ export function Footer() {
             <ul className="mt-6 space-y-3">
               {t.nav.links.map((l) => (
                 <li key={l.href}>
-                  <a
+                  <Link
                     href={l.href}
                     className="link-underline text-[0.92rem] font-light text-ivory/75 transition-colors hover:text-ivory"
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -44,6 +46,8 @@ export function Footer() {
                 <li key={l.label}>
                   <a
                     href={l.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="link-underline text-[0.92rem] font-light text-ivory/75 transition-colors hover:text-ivory"
                   >
                     {l.label}

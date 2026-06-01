@@ -12,29 +12,29 @@ export type Lang = "de" | "en";
 
 /* ============================================================
    Wörterbuch — Deutsch & Englisch (gesamte Website)
-   Modell: Frauen als Chogan-Partnerinnen ins Netzwerk holen,
-   persönlich begleiten (Mentoring). + Eigene Duft-Sets verkaufen.
+   Multi-Page: Startseite funnelt zur kostenlosen Chogan-Registrierung
+   (Direktlink, kein Call). Unterseiten: Dein Weg (Roadmap, Mentoring als
+   Endziel), Über mich, Duft-Sets, Kontakt (Insta/WhatsApp/Zoom).
    Angle: durch Beauty, Düfte & Lifestyle ein Nebeneinkommen aufbauen.
-   Traffic kommt v.a. von Instagram (warm). Ton: konkret, ehrlich,
-   Hilfe & Tipps von Manuela. Kein Guru, kein Em-Dash, kein Druck.
+   Ton: konkret, ehrlich, Hilfe von Manuela. Kein Guru, kein Em-Dash.
    ============================================================ */
 const de = {
   nav: {
     links: [
-      { label: "Duft-Sets", href: "#duefte" },
-      { label: "Dein Weg", href: "#partnerin" },
-      { label: "Über mich", href: "#ueber" },
-      { label: "Kontakt", href: "#kontakt" },
+      { label: "Dein Weg", href: "/dein-weg" },
+      { label: "Duft-Sets", href: "/duefte" },
+      { label: "Über mich", href: "/ueber" },
+      { label: "Kontakt", href: "/kontakt" },
     ],
-    cta: "Partnerin werden",
+    cta: "Kostenlos registrieren",
   },
   hero: {
     eyebrow: "Beauty · Düfte · Lifestyle",
     h1: ["Mit Beauty, Düften und Lifestyle ", "ein Nebeneinkommen", " aufbauen", "", "."],
-    sub: "Schön, dass du da bist. Ich zeige dir, wie du mit Chogan nebenbei startest: Düfte in Designer-Qualität, ein Einstieg ohne Risiko und meine Tipps und Hilfe auf dem ganzen Weg.",
-    cta1: "Partnerin werden",
-    cta2: "Meine Duft-Sets",
-    note: "Einstieg ohne Risiko · Designer-Qualität · in deinem Tempo",
+    sub: "Schön, dass du da bist. Du startest mit Chogan komplett kostenlos: Düfte in Designer-Qualität, ein Einstieg ohne Risiko und meine Tipps und Hilfe auf dem ganzen Weg.",
+    cta1: "Kostenlos registrieren",
+    cta2: "Dein Weg ansehen",
+    note: "Direkt bei Chogan · kein Risiko · in deinem Tempo",
     kredo: "„Düfte, die erinnern. Frauen, die wachsen.“",
     imgLabel: "Parfum-Flakon auf warmem Marmor",
   },
@@ -44,6 +44,19 @@ const de = {
     new: ["So muss es nicht sein. Du startest klein, mit Beauty und Düften, die du liebst, und ", "jemandem an deiner Seite", "."],
     sub: "Kein Alles-oder-nichts. Kein Verkaufsdruck. Und vor allem nicht allein, so wie ich damals.",
   },
+  register: {
+    eyebrow: "Kostenlos starten",
+    h2: ["Registriere dich kostenlos ", "bei Chogan", "."],
+    sub: "Dein Einstieg läuft direkt über Chogan und kostet dich nichts. Kein Abo, keine Mindestabnahme, keine versteckten Kosten. Du legst dir nur deinen Zugang an, der Rest kommt von mir.",
+    why: [
+      { title: "Warum kostenlos?", text: "Chogan verdient an den Produkten, nicht an deiner Anmeldung. Darum kannst du ohne Risiko reinschnuppern." },
+      { title: "Warum über mich?", text: "Ich verdiene nur, wenn du wirklich vorankommst. Deshalb helfe ich dir ehrlich, statt dich mit einem Link allein zu lassen." },
+      { title: "Was du danach machst", text: "Düfte selbst nutzen, an Freundinnen weitergeben oder dir etwas aufbauen. Du entscheidest, ich begleite dich." },
+    ],
+    cta: "Jetzt kostenlos registrieren",
+    ctaNote: "Direkt bei Chogan · 2 Minuten · keine Kosten",
+    help: "Fragen vorher? Erreich mich kurz hier:",
+  },
   marquee: [
     "Beauty, Düfte und Lifestyle",
     "Ein Nebeneinkommen, das zu dir passt",
@@ -51,13 +64,13 @@ const de = {
     "Du startest nicht allein",
   ],
   offerings: {
-    eyebrow: "Partnerin werden",
+    eyebrow: "Warum mit mir",
     h2: ["Was du an meiner Seite ", "bekommst", "."],
     sub: "Kein anonymer Link, kein Sich-selbst-überlassen. So helfe ich dir vom ersten Tag an.",
     more: "Mehr",
     items: [
       { tag: "01", title: "Tipps und Hilfe von mir", text: "Ich bin erreichbar, per WhatsApp und im Call. Du fragst, ich antworte, wir gehen die Schritte zusammen." },
-      { tag: "02", title: "Einstieg ohne Risiko", text: "Du startest mit einem Startset, ohne Lager und ohne Mindestabnahme. Du gehst nichts ein." },
+      { tag: "02", title: "Einstieg ohne Risiko", text: "Du startest kostenlos, ohne Lager und ohne Mindestabnahme. Du gehst nichts ein." },
       { tag: "03", title: "Fertige Vorlagen", text: "Texte, Posting-Ideen und Abläufe, die schon funktionieren. Du musst nichts bei null erfinden." },
       { tag: "04", title: "Eine Gruppe im Rücken", text: "Du landest in einem Netzwerk von Frauen, die dasselbe aufbauen. Niemand startet allein." },
     ],
@@ -84,7 +97,7 @@ const de = {
     ],
     productTag: "Duft-Set · Chogan",
     discover: "Bestellen",
-    cta: "Set bestellen",
+    cta: "Set per WhatsApp bestellen",
     ctaNote: "Bestellung & Beratung per WhatsApp · schnelle Lieferung",
     pageIntro: "Über 100 Düfte in Designer-Qualität, fair im Preis, langanhaltend auf der Haut. Ich finde mit dir den, der bleibt.",
   },
@@ -101,17 +114,33 @@ const de = {
     ctaNote: "Per WhatsApp oder Zoom · 100 % kostenfrei",
     pageIntro: "Kein Hype, kein Druck. Nur ein ehrlicher, ruhiger Weg, dir mit etwas, das du liebst, ein Nebeneinkommen aufzubauen.",
   },
+  roadmap: {
+    eyebrow: "Dein Weg",
+    h2: ["Von der Anmeldung bis zu ", "deinem Ziel", "."],
+    sub: "Jede geht ihr eigenes Tempo. So sieht der Weg aus, wenn du ihn gehen willst.",
+    steps: [
+      { n: "01", title: "Kostenlos registrieren", text: "Dein Zugang bei Chogan, direkt über mich. Ohne Risiko, ohne Kosten." },
+      { n: "02", title: "Deine ersten Düfte", text: "Du testest, findest deine Favoriten und nutzt sie selbst oder gibst sie weiter." },
+      { n: "03", title: "Erste Kundinnen", text: "Aus einem netten Kompliment werden Empfehlungen. Ich gebe dir Vorlagen und Tipps, die schon funktionieren." },
+      { n: "04", title: "Dein Netzwerk wächst", text: "Du holst andere dazu und baust dir Schritt für Schritt etwas Eigenes auf." },
+    ],
+    goalEyebrow: "Das Endziel",
+    goalTitle: "Höhere Umsätze mit 1:1 Mentoring",
+    goalText: "Wenn du wirklich aufbauen willst, arbeite ich direkt mit dir. Mehr dazu gleich.",
+    cta: "Jetzt kostenlos starten",
+    ctaNote: "Schritt 1 beginnt hier · direkt bei Chogan",
+  },
   coaching: {
     eyebrow: "1:1 Mentoring",
     h2: ["Für die, die wirklich ", "aufbauen", " wollen."],
-    sub: "Manche wollen einfach schöne Düfte und ein kleines Nebeneinkommen. Andere wollen ernsthaft etwas aufbauen. Wenn du zu den Zweiten gehörst, arbeite ich mit dir direkt und persönlich.",
+    sub: "Manche wollen einfach schöne Düfte und ein kleines Nebeneinkommen. Andere wollen ernsthaft etwas aufbauen, mit höheren Umsätzen. Wenn du zu den Zweiten gehörst, arbeite ich mit dir direkt und persönlich.",
     points: [
       { title: "Direkt mit mir", text: "Enges 1:1-Mentoring statt Gruppe. Mein voller Fokus auf dem, was du aufbaust." },
       { title: "Dein eigener Plan", text: "Eine klare Strategie, auf dich zugeschnitten, mit konkreten Schritten und Zielen." },
       { title: "Nur für Ambitionierte", text: "Begrenzte Plätze. Nur, wenn du wirklich Zeit und Energie investieren willst." },
     ],
     cta: "Ist das was für dich?",
-    ctaNote: "Plätze begrenzt · Details im Gespräch",
+    ctaNote: "Plätze begrenzt · schreib mir kurz",
   },
   about: {
     eyebrow: "Über mich",
@@ -147,11 +176,11 @@ const de = {
     success: "Wunderbar, ich melde mich persönlich bei dir. ✦",
   },
   contact: {
+    sub: "Hast du Fragen, bevor du startest? Erreich mich da, wo es dir am liebsten ist.",
+    instagram: { label: "Instagram", note: "Schreib mir eine DM" },
+    whatsapp: { label: "WhatsApp", note: "Meist Antwort am selben Tag" },
+    zoom: { label: "Zoom-Call", note: "Auf Wunsch, einfach kurz anfragen" },
     kredo: "„Düfte, die erinnern. Frauen, die wachsen.“",
-    email: "hallo@manuela-chogan.de",
-    instagram: "@manuela.chogan",
-    h2: ["Lass uns ", "sprechen", "."],
-    sub: "Schreib mir, ob für ein Duft-Set oder den Start als Partnerin. Ich antworte persönlich.",
   },
   footer: {
     tagline: "Chogan Partnerin & Mentorin. Ich helfe Frauen, sich mit Beauty und Düften ein Nebeneinkommen aufzubauen. Plus hochwertige Duft-Sets direkt bei mir.",
@@ -164,6 +193,7 @@ const de = {
     rights: "Alle Rechte vorbehalten",
   },
   pages: {
+    deinweg: { eyebrow: "Dein Weg", title: ["Dein Weg mit ", "Chogan", "."] },
     duefte: { eyebrow: "Düfte & Sets", title: ["Finde den Duft, der ", "bleibt", "."] },
     partnerin: { eyebrow: "Dein Weg", title: ["Werde Partnerin an ", "meiner Seite", "."] },
     ueber: { eyebrow: "Über mich", title: ["Schön, dass du ", "hier", " bist."] },
@@ -175,20 +205,20 @@ const de = {
 const en: typeof de = {
   nav: {
     links: [
-      { label: "Fragrance sets", href: "#duefte" },
-      { label: "Your path", href: "#partnerin" },
-      { label: "About me", href: "#ueber" },
-      { label: "Contact", href: "#kontakt" },
+      { label: "Your path", href: "/dein-weg" },
+      { label: "Fragrance sets", href: "/duefte" },
+      { label: "About me", href: "/ueber" },
+      { label: "Contact", href: "/kontakt" },
     ],
-    cta: "Become a partner",
+    cta: "Register free",
   },
   hero: {
     eyebrow: "Beauty · Fragrances · Lifestyle",
     h1: ["Build a ", "second income", " with beauty, fragrances and lifestyle", "", "."],
-    sub: "Lovely that you're here. I'll show you how to start with Chogan on the side: fragrances in designer quality, a risk-free entry, and my tips and help all along the way.",
-    cta1: "Become a partner",
-    cta2: "My fragrance sets",
-    note: "Risk-free entry · designer quality · at your own pace",
+    sub: "Lovely that you're here. You start with Chogan completely free: fragrances in designer quality, a risk-free entry, and my tips and help all along the way.",
+    cta1: "Register free",
+    cta2: "See your path",
+    note: "Directly with Chogan · no risk · at your own pace",
     kredo: "“Scents that linger. Women who grow.”",
     imgLabel: "Perfume bottle on warm marble",
   },
@@ -198,6 +228,19 @@ const en: typeof de = {
     new: ["It doesn't have to be that way. You start small, with beauty and fragrances you love, and ", "someone by your side", "."],
     sub: "No all-or-nothing. No sales pressure. And above all not alone, the way I was back then.",
   },
+  register: {
+    eyebrow: "Start free",
+    h2: ["Register for free ", "with Chogan", "."],
+    sub: "Your entry runs directly through Chogan and costs you nothing. No subscription, no minimum order, no hidden costs. You just set up your access, the rest comes from me.",
+    why: [
+      { title: "Why free?", text: "Chogan earns on the products, not on your sign-up. So you can explore with no risk." },
+      { title: "Why through me?", text: "I only earn when you actually move forward. So I help you honestly instead of leaving you alone with a link." },
+      { title: "What you do next", text: "Use the fragrances yourself, share them with friends, or build something. You decide, I guide you." },
+    ],
+    cta: "Register for free now",
+    ctaNote: "Directly with Chogan · 2 minutes · no cost",
+    help: "Questions first? Reach me quickly here:",
+  },
   marquee: [
     "Beauty, fragrances and lifestyle",
     "A second income that fits you",
@@ -205,13 +248,13 @@ const en: typeof de = {
     "You don't start alone",
   ],
   offerings: {
-    eyebrow: "Become a partner",
+    eyebrow: "Why with me",
     h2: ["What you get ", "by my side", "."],
     sub: "No anonymous link, no being left to figure it out alone. This is how I help you from day one.",
     more: "More",
     items: [
       { tag: "01", title: "My tips and help", text: "I'm reachable, on WhatsApp and on calls. You ask, I answer, we take the steps together." },
-      { tag: "02", title: "Risk-free entry", text: "You start with a starter set, no stock and no minimum order. You're not committing to anything." },
+      { tag: "02", title: "Risk-free entry", text: "You start for free, no stock and no minimum order. You're not committing to anything." },
       { tag: "03", title: "Ready-made templates", text: "Texts, posting ideas and workflows that already work. You don't reinvent anything from scratch." },
       { tag: "04", title: "A group behind you", text: "You land in a network of women building the same thing. Nobody starts alone." },
     ],
@@ -238,7 +281,7 @@ const en: typeof de = {
     ],
     productTag: "Fragrance set · Chogan",
     discover: "Order",
-    cta: "Order a set",
+    cta: "Order a set via WhatsApp",
     ctaNote: "Order & advice via WhatsApp · fast delivery",
     pageIntro: "Over 100 fragrances in designer quality, fair in price, long-lasting on the skin. Together we'll find the one that stays.",
   },
@@ -255,17 +298,33 @@ const en: typeof de = {
     ctaNote: "Via WhatsApp or Zoom · 100 % free",
     pageIntro: "No hype, no pressure. Just an honest, calm path to build a second income with something you love.",
   },
+  roadmap: {
+    eyebrow: "Your path",
+    h2: ["From sign-up to ", "your goal", "."],
+    sub: "Everyone moves at her own pace. Here's what the path looks like if you want to walk it.",
+    steps: [
+      { n: "01", title: "Register for free", text: "Your Chogan access, directly through me. No risk, no cost." },
+      { n: "02", title: "Your first fragrances", text: "You test, find your favourites and use them yourself or share them." },
+      { n: "03", title: "First customers", text: "A nice compliment turns into recommendations. I give you templates and tips that already work." },
+      { n: "04", title: "Your network grows", text: "You bring others in and build something of your own, step by step." },
+    ],
+    goalEyebrow: "The end goal",
+    goalTitle: "Higher revenue with 1:1 mentoring",
+    goalText: "When you really want to build, I work with you directly. More on that just below.",
+    cta: "Start for free now",
+    ctaNote: "Step 1 begins here · directly with Chogan",
+  },
   coaching: {
     eyebrow: "1:1 mentoring",
     h2: ["For those who truly want to ", "build", "."],
-    sub: "Some just want beautiful fragrances and a small second income. Others want to seriously build something. If you're the second kind, I work with you directly and personally.",
+    sub: "Some just want beautiful fragrances and a small second income. Others want to seriously build something, with higher revenue. If you're the second kind, I work with you directly and personally.",
     points: [
       { title: "Directly with me", text: "Close 1:1 mentoring instead of a group. My full focus on what you're building." },
       { title: "Your own plan", text: "A clear strategy, tailored to you, with concrete steps and goals." },
       { title: "For the ambitious only", text: "Limited spots. Only if you're truly ready to invest time and energy." },
     ],
     cta: "Is this for you?",
-    ctaNote: "Limited spots · details in the call",
+    ctaNote: "Limited spots · just message me",
   },
   about: {
     eyebrow: "About me",
@@ -301,11 +360,11 @@ const en: typeof de = {
     success: "Wonderful, I'll personally get in touch with you. ✦",
   },
   contact: {
+    sub: "Got questions before you start? Reach me wherever you like best.",
+    instagram: { label: "Instagram", note: "Send me a DM" },
+    whatsapp: { label: "WhatsApp", note: "Usually a reply the same day" },
+    zoom: { label: "Zoom call", note: "On request, just ask" },
     kredo: "“Scents that linger. Women who grow.”",
-    email: "hallo@manuela-chogan.de",
-    instagram: "@manuela.chogan",
-    h2: ["Let's ", "talk", "."],
-    sub: "Write to me, whether for a fragrance set or starting as a partner. I reply personally.",
   },
   footer: {
     tagline: "Chogan partner & mentor. I help women build a second income with beauty and fragrances. Plus premium fragrance sets directly from me.",
@@ -318,6 +377,7 @@ const en: typeof de = {
     rights: "All rights reserved",
   },
   pages: {
+    deinweg: { eyebrow: "Your path", title: ["Your path with ", "Chogan", "."] },
     duefte: { eyebrow: "Fragrances & Sets", title: ["Find the scent that ", "stays", "."] },
     partnerin: { eyebrow: "Your path", title: ["Become a partner by ", "my side", "."] },
     ueber: { eyebrow: "About me", title: ["Lovely that you're ", "here", "."] },

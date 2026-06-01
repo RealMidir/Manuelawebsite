@@ -44,7 +44,7 @@ export function Coaching() {
 
           <Reveal delay={0.1}>
             <div className="mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-              <Button href="#termin" variant="primary">
+              <Button href="/kontakt" variant="primary">
                 {c.cta}
               </Button>
               <span className="mono-label text-clay/70">{c.ctaNote}</span>

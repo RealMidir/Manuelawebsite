@@ -4,6 +4,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { useLang } from "@/lib/i18n";
+import { WHATSAPP_URL } from "@/lib/links";
 
 export function Duefte() {
   const { t } = useLang();
@@ -56,7 +57,9 @@ export function Duefte() {
                       {p.price}
                     </span>
                     <a
-                      href="#termin"
+                      href={WHATSAPP_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="link-underline mono-label text-espresso"
                     >
                       {d.discover} →
@@ -70,7 +73,7 @@ export function Duefte() {
 
         <Reveal delay={0.1}>
           <div className="mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <Button href="#termin" variant="outline">
+            <Button href={WHATSAPP_URL} variant="outline">
               {d.cta}
             </Button>
             <span className="mono-label text-clay/70">{d.ctaNote}</span>

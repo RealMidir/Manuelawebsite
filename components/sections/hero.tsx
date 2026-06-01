@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { useLang } from "@/lib/i18n";
+import { CHOGAN_REGISTER_URL } from "@/lib/links";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const container = {
@@ -65,10 +66,10 @@ export function Hero() {
             variants={up}
             className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
-            <Button href="#termin" variant="primary">
+            <Button href={CHOGAN_REGISTER_URL} variant="primary">
               {h.cta1}
             </Button>
-            <Button href="#start" variant="outline">
+            <Button href="/dein-weg" variant="outline">
               {h.cta2}
             </Button>
           </motion.div>

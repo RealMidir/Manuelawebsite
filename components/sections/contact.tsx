@@ -3,54 +3,63 @@
 import { Reveal } from "@/components/ui/reveal";
 import { Logo } from "@/components/ui/logo";
 import { useLang } from "@/lib/i18n";
+import { INSTAGRAM_URL, WHATSAPP_URL, EMAIL } from "@/lib/links";
 
 export function Contact() {
   const { t } = useLang();
   const c = t.contact;
+  const channels = [
+    { ...c.instagram, href: INSTAGRAM_URL },
+    { ...c.whatsapp, href: WHATSAPP_URL },
+    { ...c.zoom, href: `mailto:${EMAIL}` },
+  ];
   return (
-    <section id="kontakt" className="scroll-mt-24 bg-cream py-24 md:py-36">
-      <div className="mx-auto max-w-3xl px-6 text-center">
+    <section id="kontakt" className="bg-cream pb-28 pt-4 md:pb-36">
+      <div className="mx-auto max-w-[1100px] px-6 md:px-10">
         <Reveal>
-          <p className="eyebrow">{t.pages.kontakt.eyebrow}</p>
-        </Reveal>
-        <Reveal delay={0.05}>
-          <h2 className="display-balance mt-6 font-display text-[clamp(2.4rem,6vw,4.6rem)] font-medium leading-[1.02] text-espresso">
-            {c.h2[0]}
-            <span className="italic text-clay">{c.h2[1]}</span>
-            {c.h2[2]}
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="text-pretty mx-auto mt-6 max-w-xl font-light leading-relaxed text-mushroom md:text-lg">
+          <p className="text-pretty max-w-xl font-light leading-relaxed text-mushroom md:text-lg">
             {c.sub}
           </p>
         </Reveal>
-        <Reveal delay={0.15}>
-          <div className="mt-10 flex flex-col items-center justify-center gap-5 sm:flex-row sm:gap-8">
-            <a
-              href={`mailto:${c.email}`}
-              className="link-underline mono-label text-espresso"
-            >
-              {c.email}
-            </a>
-            <span className="hidden h-3 w-px bg-greige/40 sm:block" />
-            <a
-              href="https://instagram.com/manuela.chogan"
-              className="link-underline mono-label text-espresso"
-            >
-              {c.instagram}
-            </a>
-          </div>
-        </Reveal>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {channels.map((ch, i) => {
+            const external = ch.href.startsWith("http");
+            return (
+              <Reveal key={ch.label} delay={i * 0.08} className="h-full">
+                <a
+                  href={ch.href}
+                  {...(external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                  className="group flex h-full flex-col justify-between border border-greige/25 bg-ivory/40 p-8 transition-colors duration-500 hover:border-clay/40"
+                >
+                  <div>
+                    <h3 className="font-display text-2xl text-espresso">
+                      {ch.label}
+                    </h3>
+                    <p className="mt-2 text-[0.92rem] font-light leading-relaxed text-mushroom">
+                      {ch.note}
+                    </p>
+                  </div>
+                  <span className="mono-label mt-8 inline-flex items-center gap-2 text-clay">
+                    <span className="transition-transform duration-500 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </span>
+                </a>
+              </Reveal>
+            );
+          })}
+        </div>
+
         <Reveal delay={0.2}>
-          <div className="mt-16 flex justify-center">
+          <div className="mt-20 flex flex-col items-center text-center">
             <Logo variant="full" />
+            <p className="mt-8 font-display text-xl italic text-mushroom">
+              {c.kredo}
+            </p>
           </div>
-        </Reveal>
-        <Reveal delay={0.25}>
-          <p className="mt-8 font-display text-xl italic text-mushroom">
-            {c.kredo}
-          </p>
         </Reveal>
       </div>
     </section>

@@ -27,12 +27,20 @@ export function Button({
       )}
     </>
   );
-  return href.startsWith("/") ? (
-    <Link href={href} className={cls}>
-      {inner}
-    </Link>
-  ) : (
-    <a href={href} className={cls}>
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} className={cls}>
+        {inner}
+      </Link>
+    );
+  }
+  const external = /^https?:/.test(href);
+  return (
+    <a
+      href={href}
+      className={cls}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+    >
       {inner}
     </a>
   );
