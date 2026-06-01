@@ -117,8 +117,8 @@ const de = {
     eyebrow: "Über mich",
     h2: ["Warum ich das ", "mache", "."],
     paras: [
-      "Ich habe mein Business komplett allein aufgebaut. Ohne jemanden, den ich fragen konnte, ohne Vorbild. Und die ganze Zeit habe ich mir eins gewünscht: jemanden an meiner Seite, der den Weg schon kennt.",
-      "Als ich diese Menschen endlich hatte, wurde alles leichter. Über mein Netzwerk haben sich Türen geöffnet, mit denen ich nie gerechnet hätte. Genau das möchte ich weitergeben: für dich die sein, die ich am Anfang selbst gebraucht hätte.",
+      "Ich bin Manuela. Ich habe früh mit Chogan angefangen und kam voran, aber mit vielen Umwegen und Problemen, die mir niemand abnehmen konnte. Was mir gefehlt hat: jemand an meiner Seite, der den Weg schon kennt.",
+      "Im Chogan-Netzwerk habe ich genau das gefunden. Es wurde leichter, und es haben sich Türen geöffnet, mit denen ich nie gerechnet hätte. Genau das möchte ich an dich weitergeben.",
     ],
     quote: "„Ich musste allein anfangen. Du nicht.“",
     role: "Manuela · Chogan Partnerin & Mentorin",
@@ -271,8 +271,8 @@ const en: typeof de = {
     eyebrow: "About me",
     h2: ["Why I ", "do this", "."],
     paras: [
-      "I built my business completely on my own. No one to ask, no example to follow. And the whole time I wished for one thing: someone by my side who already knew the way.",
-      "When I finally had those people, everything got easier. Through my network, doors opened I never expected. That's exactly what I want to pass on: to be for you the person I needed myself at the start.",
+      "I'm Manuela. I started with Chogan early and made progress, but with plenty of detours and problems no one could take off my hands. What I was missing: someone by my side who already knew the way.",
+      "In the Chogan network I found exactly that. It got easier, and doors opened I never expected. That's what I want to pass on to you.",
     ],
     quote: "“I had to start alone. You don't.”",
     role: "Manuela · Chogan Partner & Mentor",
