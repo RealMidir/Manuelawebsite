@@ -39,6 +39,29 @@ const de = {
     "Ein Business, das nach dir riecht",
     "Wissen statt Verkaufsdruck",
   ],
+  offerings: {
+    eyebrow: "Angebot",
+    h2: ["So arbeiten wir ", "zusammen", "."],
+    sub: "Ob du einen Duft suchst, der bleibt, oder ein Business, das zu dir passt — hier ist dein Einstieg.",
+    more: "Mehr",
+    items: [
+      { tag: "01", title: "Duftberatung", text: "Konkrete Empfehlungen statt Superlative — der Duft, der wirklich zu dir passt." },
+      { tag: "02", title: "1:1 Mentoring", text: "Persönliche Begleitung mit Skripten, Plänen und echtem Wissen aus der Praxis." },
+      { tag: "03", title: "Partnerin werden", text: "Bau dir flexibel ein eigenes Business auf — kein Risiko, in deinem Tempo." },
+      { tag: "04", title: "Masterclass", text: "Der kostenlose Einstieg: die Essenz von Düften, Beauty & Business." },
+    ],
+  },
+  fullbleed: {
+    eyebrow: "Markenkredo",
+    lines: ["Düfte, die erinnern.", "Frauen, die wachsen."],
+    cta: "Lass uns sprechen",
+    imgLabel: "Stillleben · warmes Licht",
+  },
+  gallery: {
+    eyebrow: "Einblicke",
+    h2: ["Hinter ", "der Marke", "."],
+    captions: ["Parfum auf Marmor", "Persönliche Beratung", "Momente", "Detail"],
+  },
   duefte: {
     eyebrow: "Düfte · Beratung",
     h2: ["Der richtige Duft ist eine ", "Erinnerung", "."],
@@ -152,6 +175,29 @@ const en: typeof de = {
     "A business that smells like you",
     "Knowledge over sales pressure",
   ],
+  offerings: {
+    eyebrow: "What I offer",
+    h2: ["Ways we can work ", "together", "."],
+    sub: "Whether you're after a scent that lasts or a business that fits you — here's your entry point.",
+    more: "More",
+    items: [
+      { tag: "01", title: "Fragrance consultation", text: "Concrete recommendations over superlatives — the scent that truly suits you." },
+      { tag: "02", title: "1:1 mentoring", text: "Personal guidance with scripts, plans and real knowledge from practice." },
+      { tag: "03", title: "Become a partner", text: "Build your own business flexibly — no risk, at your own pace." },
+      { tag: "04", title: "Masterclass", text: "The free entry point: the essence of fragrance, beauty & business." },
+    ],
+  },
+  fullbleed: {
+    eyebrow: "Brand credo",
+    lines: ["Scents that linger.", "Women who grow."],
+    cta: "Let's talk",
+    imgLabel: "Still life · warm light",
+  },
+  gallery: {
+    eyebrow: "Glimpses",
+    h2: ["Behind ", "the brand", "."],
+    captions: ["Perfume on marble", "Personal consultation", "Moments", "Detail"],
+  },
   duefte: {
     eyebrow: "Fragrances · Consultation",
     h2: ["The right scent is a ", "memory", "."],
