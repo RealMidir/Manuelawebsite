@@ -48,7 +48,7 @@ export function About() {
             <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-3 border-t border-greige/25 pt-7">
               {a.trust.map((tr) => (
                 <li key={tr} className="mono-label text-mushroom">
-                  — {tr}
+                  · {tr}
                 </li>
               ))}
             </ul>

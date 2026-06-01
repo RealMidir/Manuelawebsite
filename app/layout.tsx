@@ -29,13 +29,13 @@ const jbmono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Manuela × Chogan — Düfte. Beauty. Business.",
+  title: "Manuela × Chogan · Düfte. Beauty. Business.",
   description:
-    "Persönliche Duftberatung mit Chogan – und Mentoring für Frauen, die ein eigenes Business aufbauen wollen. Schritt für Schritt, ohne Verkaufsdruck, mit echtem Wissen.",
+    "Mit Beauty, Düften und Lifestyle ein Nebeneinkommen aufbauen. Werde Chogan-Partnerin mit Manuela als Mentorin. Plus hochwertige Duft-Sets in Designer-Qualität.",
   openGraph: {
-    title: "Manuela × Chogan — Düfte. Beauty. Business.",
+    title: "Manuela × Chogan · Düfte. Beauty. Business.",
     description:
-      "Düfte verkaufen, Frauen stärken, frei leben. Duftberatung & Chogan-Partnerin-Mentoring.",
+      "Durch Beauty, Düfte und Lifestyle nebenbei ein Nebeneinkommen aufbauen. Chogan-Partnerin werden, mit persönlicher Hilfe von Manuela.",
     type: "website",
     locale: "de_DE",
   },
