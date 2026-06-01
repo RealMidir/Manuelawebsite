@@ -77,6 +77,16 @@ body {
 .display-balance { text-wrap: balance; }
 .text-pretty { text-wrap: pretty; }
 
+/* Embossed / Letterpress — ins Papier geprägt (Moodboard-Look „die so reingeht") */
+.emboss {
+  color: color-mix(in srgb, var(--color-cream) 84%, var(--color-taupe));
+  text-shadow:
+    0 1px 0 rgba(255, 253, 248, 0.92),
+    0 -1px 1px rgba(120, 104, 88, 0.34),
+    0 2px 6px rgba(120, 104, 88, 0.12);
+}
+.emboss .ital { font-style: italic; }
+
 /* ---------- Buttons („Konvertieren mit Anstand") ---------- */
 .btn {
   display: inline-flex;

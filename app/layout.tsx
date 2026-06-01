@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/smooth-scroll";
 import { Grain } from "@/components/ui/grain";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/sections/footer";
+import { LanguageProvider } from "@/lib/i18n";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -49,12 +50,14 @@ export default function RootLayout({
       className={`${lora.variable} ${manrope.variable} ${jbmono.variable} antialiased`}
     >
       <body className="min-h-screen">
-        <SmoothScroll>
-          <Grain />
-          <Nav />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <LanguageProvider>
+          <SmoothScroll>
+            <Grain />
+            <Nav />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
+        </LanguageProvider>
       </body>
     </html>
   );

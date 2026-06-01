@@ -1,14 +1,11 @@
-import { Ornament } from "@/components/ui/logo";
+"use client";
 
-const phrases = [
-  "Düfte, die erinnern",
-  "Frauen, die wachsen",
-  "Ein Business, das nach dir riecht",
-  "Wissen statt Verkaufsdruck",
-];
+import { LogoMark } from "@/components/ui/logo";
+import { useLang } from "@/lib/i18n";
 
 export function Marquee() {
-  const row = [...phrases, ...phrases];
+  const { t } = useLang();
+  const row = [...t.marquee, ...t.marquee];
   return (
     <section className="overflow-hidden border-y border-greige/20 bg-vanilla/50 py-7">
       <div className="marquee-track items-center">
@@ -17,7 +14,7 @@ export function Marquee() {
             <span className="px-8 font-display text-xl italic text-espresso md:text-2xl">
               {p}
             </span>
-            <Ornament className="h-3 w-3 text-clay/60" />
+            <LogoMark className="h-3.5 w-3.5 text-clay/55" />
           </span>
         ))}
       </div>

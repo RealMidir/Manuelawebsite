@@ -50,3 +50,5 @@ _live.mjs
 _live_*.png
 _render_pdf.py
 _styleguide/
+_verify.mjs
+_v_*.png

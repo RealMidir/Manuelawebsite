@@ -1,53 +1,39 @@
+"use client";
+
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
-
-const steps = [
-  {
-    n: "01",
-    title: "Flexibel starten",
-    text: "Kein Risiko, keine Mindestabnahme. Du startest neben dem Beruf — in deinem Tempo, mit deinem Netzwerk.",
-  },
-  {
-    n: "02",
-    title: "1:1 Mentoring",
-    text: "Ich begleite dich persönlich — mit Skripten, Posting-Plänen und dem Wissen aus echten Verkäufen.",
-  },
-  {
-    n: "03",
-    title: "Produkt, das überzeugt",
-    text: "Chogan-Düfte mit hoher Qualität zu fairen Preisen — Frauen kaufen wieder, weil sie wieder wollen.",
-  },
-];
+import { useLang } from "@/lib/i18n";
 
 export function Partnerin() {
+  const { t } = useLang();
+  const p = t.partnerin;
   return (
-    <section id="partnerin" className="scroll-mt-24 bg-linen/40 py-24 md:py-36">
+    <section id="partnerin" className="scroll-mt-24 bg-linen/40 pb-24 pt-36 md:pb-36 md:pt-44">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
             <Reveal>
-              <p className="eyebrow">Partnerin werden</p>
+              <p className="eyebrow">{p.eyebrow}</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="display-balance mt-6 font-display text-[clamp(2.1rem,5vw,4rem)] font-medium leading-[1.04] text-espresso">
-                Aus einer <span className="italic text-clay">Idee</span> wird dein
-                Business.
+                {p.h2[0]}
+                <span className="italic text-clay">{p.h2[1]}</span>
+                {p.h2[2]}
               </h2>
             </Reveal>
           </div>
           <div className="md:col-span-5">
             <Reveal delay={0.1}>
               <p className="text-pretty font-light leading-relaxed text-mushroom">
-                Du liebst Düfte, willst flexibler arbeiten und etwas Eigenes
-                aufbauen? Ich zeige dir Schritt für Schritt, wie du als
-                Chogan-Partnerin startest.
+                {p.sub}
               </p>
             </Reveal>
           </div>
         </div>
 
         <div className="mt-14 grid gap-6 md:mt-20 md:grid-cols-3">
-          {steps.map((s, i) => (
+          {p.steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 0.08}>
               <div className="flex h-full flex-col border border-greige/25 bg-cream p-8 md:p-9">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full border border-greige/40 font-mono text-sm text-clay">
@@ -66,12 +52,10 @@ export function Partnerin() {
 
         <Reveal delay={0.1}>
           <div className="mt-14 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-            <Button href="#termin" variant="primary">
-              30 Minuten mit Manuela
+            <Button href="/kontakt" variant="primary">
+              {p.cta}
             </Button>
-            <span className="mono-label text-clay/70">
-              Online via Zoom · 100 % kostenfrei
-            </span>
+            <span className="mono-label text-clay/70">{p.ctaNote}</span>
           </div>
         </Reveal>
       </div>

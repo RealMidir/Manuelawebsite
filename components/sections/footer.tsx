@@ -1,24 +1,16 @@
-import { Logo } from "@/components/ui/logo";
+"use client";
 
-const nav = [
-  { label: "Düfte", href: "#duefte" },
-  { label: "Partnerin werden", href: "#partnerin" },
-  { label: "Über mich", href: "#ueber" },
-  { label: "Stimmen", href: "#stimmen" },
-  { label: "Termin", href: "#termin" },
-];
+import Link from "next/link";
+import { Logo } from "@/components/ui/logo";
+import { useLang } from "@/lib/i18n";
 
 const social = [
   { label: "Instagram", href: "https://instagram.com/manuela.chogan" },
   { label: "E-Mail", href: "mailto:hallo@manuela-chogan.de" },
 ];
 
-const legal = [
-  { label: "Impressum", href: "#" },
-  { label: "Datenschutz", href: "#" },
-];
-
 export function Footer() {
+  const { t } = useLang();
   return (
     <footer className="relative overflow-hidden bg-noir text-ivory/65">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
@@ -26,29 +18,28 @@ export function Footer() {
           <div className="md:col-span-5">
             <Logo variant="full" on="dark" className="!items-start" />
             <p className="mt-8 max-w-sm text-sm font-light leading-relaxed text-ivory/55">
-              Persönliche Duftberatung mit Chogan — und Mentoring für Frauen, die
-              ein eigenes Business aufbauen wollen.
+              {t.footer.tagline}
             </p>
           </div>
 
           <div className="md:col-span-3 md:col-start-7">
-            <p className="mono-label text-ivory/40">Navigation</p>
+            <p className="mono-label text-ivory/40">{t.footer.navLabel}</p>
             <ul className="mt-6 space-y-3">
-              {nav.map((l) => (
+              {t.nav.links.map((l) => (
                 <li key={l.href}>
-                  <a
+                  <Link
                     href={l.href}
                     className="link-underline text-[0.92rem] font-light text-ivory/75 transition-colors hover:text-ivory"
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="md:col-span-3">
-            <p className="mono-label text-ivory/40">Folgen</p>
+            <p className="mono-label text-ivory/40">{t.footer.followLabel}</p>
             <ul className="mt-6 space-y-3">
               {social.map((l) => (
                 <li key={l.label}>
@@ -65,9 +56,9 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-start justify-between gap-5 border-t border-ivory/12 py-8 font-mono text-[0.66rem] uppercase tracking-[0.18em] text-ivory/40 md:flex-row md:items-center">
-          <span>© {new Date().getFullYear()} Manuela × Chogan</span>
+          <span>© {new Date().getFullYear()} Manuela × Chogan · {t.footer.rights}</span>
           <div className="flex items-center gap-7">
-            {legal.map((l) => (
+            {t.footer.legal.map((l) => (
               <a key={l.label} href={l.href} className="transition-colors hover:text-ivory/70">
                 {l.label}
               </a>

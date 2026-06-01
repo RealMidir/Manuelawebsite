@@ -1,24 +1,26 @@
 import { Reveal } from "@/components/ui/reveal";
-import type { ReactNode } from "react";
 
 export function Statement({
-  children,
+  parts,
   tone = "noir",
 }: {
-  children: ReactNode;
-  tone?: "noir" | "cream";
+  parts: readonly string[];
+  tone?: "noir" | "emboss";
 }) {
-  const dark = tone === "noir";
+  const emboss = tone === "emboss";
   return (
-    <section className={dark ? "bg-noir py-28 md:py-44" : "bg-cream py-24 md:py-36"}>
+    <section className={emboss ? "bg-cream py-28 md:py-44" : "bg-noir py-28 md:py-44"}>
       <div className="mx-auto max-w-5xl px-6 text-center">
         <Reveal>
           <p
-            className={`font-display text-[clamp(2.4rem,7vw,5.5rem)] font-medium leading-[1.06] ${
-              dark ? "text-ivory" : "text-espresso"
+            className={`font-display text-[clamp(2.4rem,7vw,5.5rem)] font-medium leading-[1.08] ${
+              emboss ? "emboss" : "text-ivory"
             }`}
           >
-            {children}
+            {parts[0]}
+            <span className={emboss ? "italic" : "italic text-clay"}>
+              {parts[1]}
+            </span>
           </p>
         </Reveal>
       </div>
