@@ -40,9 +40,9 @@ const de = {
   },
   start: {
     eyebrow: "Warum überhaupt",
-    old: "Die meisten denken: ein eigenes Nebeneinkommen heißt alles umkrempeln, hohes Risiko, ständig irgendwem etwas andrehen.",
-    new: ["So muss es nicht sein. Du startest klein, neben deinem Leben, mit Beauty und Düften, die du ", "liebst", ", und meiner Hilfe."],
-    sub: "Kein Alles-oder-nichts. Kein Verkaufsdruck. Nur ein erster Schritt, den du jederzeit wieder zurückgehen kannst.",
+    old: "Die meisten denken: ein eigenes Nebeneinkommen heißt alles umkrempeln, hohes Risiko, alles allein durchziehen.",
+    new: ["So muss es nicht sein. Du startest klein, mit Beauty und Düften, die du liebst, und ", "jemandem an deiner Seite", "."],
+    sub: "Kein Alles-oder-nichts. Kein Verkaufsdruck. Und vor allem nicht allein, so wie ich damals.",
   },
   marquee: [
     "Beauty, Düfte und Lifestyle",
@@ -117,10 +117,10 @@ const de = {
     eyebrow: "Über mich",
     h2: ["Warum ich das ", "mache", "."],
     paras: [
-      "Ich bin Manuela. Lange hatte ich einen sicheren Job, feste Zeiten, und das leise Gefühl, dass da mehr sein müsste. Nicht mehr Geld um jeden Preis, sondern mehr Eigenes.",
-      "Heute baue ich mir genau das mit Chogan auf: nebenbei, mit Beauty und Düften, die ich liebe. Und ich helfe anderen Frauen auf demselben Weg. Persönlich, erreichbar, mit echten Tipps statt einem anonymen Link.",
+      "Ich habe mein Business komplett allein aufgebaut. Ohne jemanden, den ich fragen konnte, ohne Vorbild. Und die ganze Zeit habe ich mir eins gewünscht: jemanden an meiner Seite, der den Weg schon kennt.",
+      "Als ich diese Menschen endlich hatte, wurde alles leichter. Über mein Netzwerk haben sich Türen geöffnet, mit denen ich nie gerechnet hätte. Genau das möchte ich weitergeben: für dich die sein, die ich am Anfang selbst gebraucht hätte.",
     ],
-    quote: "„Niemand baut sich allein etwas auf. Den Unterschied macht, wer dir wirklich hilft.“",
+    quote: "„Ich musste allein anfangen. Du nicht.“",
     role: "Manuela · Chogan Partnerin & Mentorin",
     trust: ["Persönlich erreichbar", "Echte Hilfe, kein Funnel", "In deinem Tempo"],
     imgLabel: "Manuela · Porträt folgt",
@@ -194,9 +194,9 @@ const en: typeof de = {
   },
   start: {
     eyebrow: "Why at all",
-    old: "Most people think: a second income means turning everything upside down, high risk, constantly pushing things onto people.",
-    new: ["It doesn't have to be that way. You start small, alongside your life, with beauty and fragrances you ", "love", ", and my help."],
-    sub: "No all-or-nothing. No sales pressure. Just a first step you can walk back any time.",
+    old: "Most people think: a second income means turning everything upside down, high risk, doing it all alone.",
+    new: ["It doesn't have to be that way. You start small, with beauty and fragrances you love, and ", "someone by your side", "."],
+    sub: "No all-or-nothing. No sales pressure. And above all not alone, the way I was back then.",
   },
   marquee: [
     "Beauty, fragrances and lifestyle",
@@ -271,10 +271,10 @@ const en: typeof de = {
     eyebrow: "About me",
     h2: ["Why I ", "do this", "."],
     paras: [
-      "I'm Manuela. For a long time I had a secure job, fixed hours, and the quiet feeling that there should be more. Not more money at any cost, but more of my own.",
-      "Today I'm building exactly that with Chogan: on the side, with beauty and fragrances I love. And I help other women down the same path. Personally, reachable, with real tips instead of an anonymous link.",
+      "I built my business completely on my own. No one to ask, no example to follow. And the whole time I wished for one thing: someone by my side who already knew the way.",
+      "When I finally had those people, everything got easier. Through my network, doors opened I never expected. That's exactly what I want to pass on: to be for you the person I needed myself at the start.",
     ],
-    quote: "“No one builds something on their own. The difference is who really helps you.”",
+    quote: "“I had to start alone. You don't.”",
     role: "Manuela · Chogan Partner & Mentor",
     trust: ["Personally reachable", "Real help, not a funnel", "At your own pace"],
     imgLabel: "Manuela · portrait coming",
