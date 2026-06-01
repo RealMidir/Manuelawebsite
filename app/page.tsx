@@ -6,6 +6,7 @@ import { Offerings } from "@/components/sections/offerings";
 import { Duefte } from "@/components/sections/duefte";
 import { FullBleed } from "@/components/sections/fullbleed";
 import { Partnerin } from "@/components/sections/partnerin";
+import { Coaching } from "@/components/sections/coaching";
 import { Gallery } from "@/components/sections/gallery";
 import { Testimonials } from "@/components/sections/testimonials";
 import { BrandStatement } from "@/components/sections/brand-statement";
@@ -23,6 +24,7 @@ export default function Home() {
       <Duefte />
       <FullBleed />
       <Partnerin />
+      <Coaching />
       <Gallery />
       <Testimonials />
       <BrandStatement />

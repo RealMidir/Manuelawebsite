@@ -34,28 +34,17 @@ export function Offerings() {
         <div className="mt-14 grid gap-px overflow-hidden rounded-[4px] border border-ivory/15 bg-ivory/15 md:mt-20 md:grid-cols-2">
           {o.items.map((it, i) => (
             <Reveal key={it.tag} delay={i * 0.06} className="h-full">
-              <a
-                href="#kontakt"
-                className="group flex h-full flex-col justify-between bg-noir p-8 transition-colors duration-500 hover:bg-ink md:p-12"
-              >
-                <div>
-                  <span className="font-mono text-[0.7rem] tracking-[0.2em] text-vanilla">
-                    {it.tag}
-                  </span>
-                  <h3 className="mt-5 font-display text-[1.8rem] font-light text-ivory">
-                    {it.title}
-                  </h3>
-                  <p className="mt-3 max-w-sm text-[0.94rem] font-light leading-relaxed text-ivory/75">
-                    {it.text}
-                  </p>
-                </div>
-                <span className="mono-label mt-8 inline-flex items-center gap-2 text-ivory/80">
-                  {o.more}
-                  <span className="transition-transform duration-500 group-hover:translate-x-1">
-                    →
-                  </span>
+              <div className="flex h-full flex-col bg-noir p-8 md:p-12">
+                <span className="font-mono text-[0.7rem] tracking-[0.2em] text-vanilla">
+                  {it.tag}
                 </span>
-              </a>
+                <h3 className="mt-5 font-display text-[1.8rem] font-light text-ivory">
+                  {it.title}
+                </h3>
+                <p className="mt-3 max-w-sm text-[0.94rem] font-light leading-relaxed text-ivory/75">
+                  {it.text}
+                </p>
+              </div>
             </Reveal>
           ))}
         </div>
