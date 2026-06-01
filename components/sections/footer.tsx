@@ -13,7 +13,7 @@ const social = [
 export function Footer() {
   const { t } = useLang();
   return (
-    <footer className="relative overflow-hidden bg-noir text-ivory/75">
+    <footer data-nav="dark" className="relative overflow-hidden bg-noir text-ivory/75">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <div className="grid gap-14 py-20 md:grid-cols-12 md:py-28">
           <div className="md:col-span-5">

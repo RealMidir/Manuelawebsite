@@ -8,7 +8,7 @@ export function Register() {
   const { t } = useLang();
   const r = t.register;
   return (
-    <section id="register" className="scroll-mt-24 bg-noir py-24 text-ivory md:py-36">
+    <section id="register" data-nav="dark" className="scroll-mt-24 bg-noir py-24 text-ivory md:py-36">
       <div className="mx-auto max-w-[1100px] px-6 md:px-10">
         <div className="max-w-2xl">
           <Reveal>

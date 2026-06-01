@@ -55,14 +55,20 @@ export function Logo({
   }
 
   return (
-    <span className={`inline-flex items-center gap-2.5 ${tone} ${className}`}>
-      <LogoMark className="h-6 w-6 shrink-0 text-clay" />
+    <span
+      className={`inline-flex items-center gap-2.5 transition-colors duration-500 ${tone} ${className}`}
+    >
+      <LogoMark className={`h-6 w-6 shrink-0 transition-colors duration-500 ${markTone}`} />
       <span className="flex flex-col">
         <span className="font-display text-[1.55rem] italic leading-none">
           Manuela
         </span>
         {tagline && (
-          <span className="engraved mt-[0.3rem] font-display text-[0.62rem] leading-none tracking-[0.05em] text-clay/85">
+          <span
+            className={`mt-[0.3rem] font-display text-[0.62rem] leading-none tracking-[0.05em] transition-colors duration-500 ${
+              on === "dark" ? "text-ivory/70" : "engraved text-clay/85"
+            }`}
+          >
             {tagline}
           </span>
         )}

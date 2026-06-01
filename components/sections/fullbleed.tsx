@@ -18,6 +18,7 @@ export function FullBleed() {
   return (
     <section
       ref={ref}
+      data-nav="dark"
       className="relative flex min-h-[72vh] items-center justify-center overflow-hidden bg-noir py-32 text-center"
     >
       {/* Platzhalter-„Foto": warmes, moody Licht + dezente Textur (später echtes Bild) */}

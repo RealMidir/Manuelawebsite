@@ -7,7 +7,7 @@ export function Offerings() {
   const { t } = useLang();
   const o = t.offerings;
   return (
-    <section id="angebot" className="scroll-mt-24 bg-noir py-24 text-ivory md:py-36">
+    <section id="angebot" data-nav="dark" className="scroll-mt-24 bg-noir py-24 text-ivory md:py-36">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
