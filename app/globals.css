@@ -20,9 +20,9 @@
   --color-greige:    #9D8B76;
   --color-clay:      #897767;   /* warmer Akzent (statt Gold) */
   --color-mushroom:  #6B645B;
-  --color-espresso:  #3A322B;
-  --color-ink:       #241F1A;
-  --color-noir:      #16120F;   /* „Schwarz" – Statement/Footer */
+  --color-espresso:  #3A322B;   /* Fließtext / Headlines auf hell */
+  --color-ink:       #574F47;   /* tiefes Mushroom – Buttons, Hover */
+  --color-noir:      #6B645B;   /* Mushroom Taupe – dunkle Sektionen (Moodboard) */
 
   --font-display: var(--font-lora), Georgia, "Times New Roman", serif;
   --font-sans:    var(--font-manrope), ui-sans-serif, system-ui, sans-serif;

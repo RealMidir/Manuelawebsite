@@ -12,19 +12,19 @@ export function Offerings() {
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
             <Reveal>
-              <p className="eyebrow !text-clay">{o.eyebrow}</p>
+              <p className="eyebrow !text-vanilla">{o.eyebrow}</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="display-balance mt-6 font-display text-[clamp(2.1rem,5vw,4rem)] font-medium leading-[1.04] text-ivory">
                 {o.h2[0]}
-                <span className="italic text-clay">{o.h2[1]}</span>
+                <span className="italic text-linen">{o.h2[1]}</span>
                 {o.h2[2]}
               </h2>
             </Reveal>
           </div>
           <div className="md:col-span-5">
             <Reveal delay={0.1}>
-              <p className="text-pretty font-light leading-relaxed text-ivory/60">
+              <p className="text-pretty font-light leading-relaxed text-ivory/75">
                 {o.sub}
               </p>
             </Reveal>
@@ -39,13 +39,13 @@ export function Offerings() {
                 className="group flex h-full flex-col justify-between bg-noir p-8 transition-colors duration-500 hover:bg-ink md:p-12"
               >
                 <div>
-                  <span className="font-mono text-[0.7rem] tracking-[0.2em] text-clay">
+                  <span className="font-mono text-[0.7rem] tracking-[0.2em] text-vanilla">
                     {it.tag}
                   </span>
                   <h3 className="mt-5 font-display text-[1.8rem] font-light text-ivory">
                     {it.title}
                   </h3>
-                  <p className="mt-3 max-w-sm text-[0.94rem] font-light leading-relaxed text-ivory/60">
+                  <p className="mt-3 max-w-sm text-[0.94rem] font-light leading-relaxed text-ivory/75">
                     {it.text}
                   </p>
                 </div>

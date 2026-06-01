@@ -37,11 +37,12 @@ export function Logo({
   className?: string;
 }) {
   const tone = on === "dark" ? "text-ivory" : "text-espresso";
+  const markTone = on === "dark" ? "text-vanilla" : "text-clay";
 
   if (variant === "full") {
     return (
       <span className={`inline-flex flex-col items-center ${tone} ${className}`}>
-        <LogoMark className="h-9 w-9 text-clay" />
+        <LogoMark className={`h-9 w-9 ${markTone}`} />
         <span className="mt-4 font-display text-3xl italic leading-none">
           Manuela
         </span>

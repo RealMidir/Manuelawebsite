@@ -27,17 +27,17 @@ export function FullBleed() {
         className="pointer-events-none absolute inset-0 scale-110"
       >
         <div className="absolute inset-0 bg-noir" />
-        <div className="absolute inset-0 [background:radial-gradient(120%_120%_at_28%_18%,rgba(137,119,103,0.38),transparent_55%),radial-gradient(120%_120%_at_82%_88%,rgba(36,31,26,0.9),transparent_50%)]" />
+        <div className="absolute inset-0 [background:radial-gradient(120%_120%_at_28%_18%,rgba(214,201,182,0.30),transparent_55%),radial-gradient(120%_120%_at_82%_88%,rgba(58,52,46,0.55),transparent_50%)]" />
         <div className="absolute inset-0 opacity-40 [background:repeating-linear-gradient(118deg,transparent_0,transparent_22px,rgba(255,255,255,0.02)_23px)]" />
       </motion.div>
 
-      <span className="mono-label absolute left-5 top-5 text-ivory/30 md:left-8 md:top-8">
+      <span className="mono-label absolute left-5 top-5 text-ivory/45 md:left-8 md:top-8">
         {f.imgLabel}
       </span>
 
       <div className="relative z-10 mx-auto max-w-4xl px-6">
         <Reveal>
-          <p className="eyebrow !text-clay">{f.eyebrow}</p>
+          <p className="eyebrow !text-vanilla">{f.eyebrow}</p>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-6 font-display text-[clamp(2.2rem,6vw,4.8rem)] font-light italic leading-[1.12] text-ivory">
@@ -48,7 +48,7 @@ export function FullBleed() {
         </Reveal>
         <Reveal delay={0.2}>
           <div className="mt-10">
-            <a href="#kontakt" className="btn bg-clay text-noir hover:bg-ivory">
+            <a href="#kontakt" className="btn bg-ivory text-espresso hover:bg-cream">
               {f.cta} <span className="arrow" aria-hidden>→</span>
             </a>
           </div>
