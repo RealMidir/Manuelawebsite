@@ -52,3 +52,8 @@ _render_pdf.py
 _styleguide/
 _verify.mjs
 _v_*.png
+
+# alle lokalen Debug-Skripte/Screenshots
+_*.mjs
+_*.png
+_*.py

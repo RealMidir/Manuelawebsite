@@ -28,10 +28,12 @@ export function LogoMark({ className = "" }: { className?: string }) {
 export function Logo({
   variant = "compact",
   on = "light",
+  tagline,
   className = "",
 }: {
   variant?: "compact" | "full";
   on?: "light" | "dark";
+  tagline?: string;
   className?: string;
 }) {
   const tone = on === "dark" ? "text-ivory" : "text-espresso";
@@ -53,9 +55,16 @@ export function Logo({
 
   return (
     <span className={`inline-flex items-center gap-2.5 ${tone} ${className}`}>
-      <LogoMark className="h-6 w-6 text-clay" />
-      <span className="font-display text-[1.55rem] italic leading-none">
-        Manuela
+      <LogoMark className="h-6 w-6 shrink-0 text-clay" />
+      <span className="flex flex-col">
+        <span className="font-display text-[1.55rem] italic leading-none">
+          Manuela
+        </span>
+        {tagline && (
+          <span className="engraved mt-[0.3rem] font-display text-[0.62rem] leading-none tracking-[0.05em] text-clay/85">
+            {tagline}
+          </span>
+        )}
       </span>
     </span>
   );

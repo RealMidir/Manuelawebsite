@@ -54,7 +54,7 @@ export function Nav() {
       >
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-6 md:h-24 md:px-10">
           <a href="#top" aria-label="Manuela × Chogan">
-            <Logo variant="compact" />
+            <Logo variant="compact" tagline={t.statement.join("")} />
           </a>
 
           <nav className="hidden items-center gap-9 lg:flex">
@@ -100,7 +100,7 @@ export function Nav() {
             className="fixed inset-0 z-[60] flex flex-col bg-cream px-6 pb-12 pt-7 lg:hidden"
           >
             <div className="flex items-center justify-between">
-              <Logo variant="compact" />
+              <Logo variant="compact" tagline={t.statement.join("")} />
               <button
                 aria-label="Schließen"
                 onClick={() => setOpen(false)}

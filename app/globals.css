@@ -87,6 +87,13 @@ body {
 }
 .emboss .ital { font-style: italic; }
 
+/* Dezente Gravur für kleine Schrift (lesbar, leicht eingeprägt) */
+.engraved {
+  text-shadow:
+    0 1px 0 rgba(255, 253, 248, 0.8),
+    0 -0.5px 0.5px rgba(120, 104, 88, 0.3);
+}
+
 /* ---------- Buttons („Konvertieren mit Anstand") ---------- */
 .btn {
   display: inline-flex;
