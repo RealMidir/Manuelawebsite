@@ -82,6 +82,31 @@ export function Nav() {
     };
   }, [pathname]);
 
+  // Body-Scroll sperren, solange das Mobile-Menü offen ist – verhindert,
+  // dass der Hintergrund mitscrollt (Scroll-Bleed), inkl. iOS Safari.
+  useEffect(() => {
+    if (!open) return;
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      width: body.style.width,
+      overflow: body.style.overflow,
+    };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      window.scrollTo(0, scrollY);
+    };
+  }, [open]);
+
   const inverted = scrolled && onDark;
 
   return (
@@ -163,7 +188,7 @@ export function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, ease: EASE }}
-            className="fixed inset-0 z-[60] flex flex-col bg-cream px-6 pb-12 pt-7 lg:hidden"
+            className="fixed inset-0 z-[60] flex flex-col overflow-y-auto overscroll-contain bg-cream px-6 pb-12 pt-7 lg:hidden"
           >
             <div className="flex items-center justify-between">
               <Logo variant="compact" tagline={t.statement.join("")} />
