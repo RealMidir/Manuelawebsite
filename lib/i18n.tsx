@@ -39,10 +39,10 @@ const de = {
     imgLabel: "Parfum-Flakon auf warmem Marmor",
   },
   start: {
-    eyebrow: "Anders gedacht",
-    old: "„Ein eigenes Nebeneinkommen heißt Risiko, Druck und alles allein.“ Das glauben die meisten. Muss aber nicht stimmen.",
-    motto: ["Wer anderen wirklich hilft, ", "bekommt zurück", "."],
-    sub: "Das ist mein Prinzip. Ich zeige dir, was mit Chogan geht, helfe dir beim Start und komme voran, wenn du vorankommst. Kein Alles-oder-nichts, kein Verkaufsdruck, nicht allein.",
+    eyebrow: "Warum überhaupt",
+    old: "Die meisten denken: ein eigenes Nebeneinkommen heißt alles umkrempeln, hohes Risiko, alles allein durchziehen.",
+    new: ["So muss es nicht sein. Du startest klein, mit Beauty und Düften, die du liebst, und ", "jemandem an deiner Seite", "."],
+    sub: "Kein Alles-oder-nichts. Kein Verkaufsdruck. Und vor allem nicht allein, so wie ich damals.",
   },
   register: {
     eyebrow: "Kostenlos starten",
@@ -270,10 +270,10 @@ const en: typeof de = {
     imgLabel: "Perfume bottle on warm marble",
   },
   start: {
-    eyebrow: "A different view",
-    old: "“A second income means risk, pressure and doing it all alone.” That's what most people believe. It doesn't have to be true.",
-    motto: ["Those who truly help others ", "get back", "."],
-    sub: "That's my principle. I show you what's possible with Chogan, help you start, and move forward when you do. No all-or-nothing, no sales pressure, not alone.",
+    eyebrow: "Why at all",
+    old: "Most people think: a second income means turning everything upside down, high risk, doing it all alone.",
+    new: ["It doesn't have to be that way. You start small, with beauty and fragrances you love, and ", "someone by your side", "."],
+    sub: "No all-or-nothing. No sales pressure. And above all not alone, the way I was back then.",
   },
   register: {
     eyebrow: "Start free",
