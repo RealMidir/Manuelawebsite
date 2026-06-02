@@ -25,9 +25,9 @@ export function Start() {
 
         <Reveal delay={0.12}>
           <p className="display-balance mx-auto mt-9 max-w-3xl font-display text-[clamp(1.85rem,4.4vw,3.4rem)] font-medium leading-[1.12] text-espresso">
-            {s.new[0]}
-            <span className="italic text-clay">{s.new[1]}</span>
-            {s.new[2]}
+            {s.motto[0]}
+            <span className="italic text-clay">{s.motto[1]}</span>
+            {s.motto[2]}
           </p>
         </Reveal>
 

@@ -15,3 +15,12 @@ export const INSTAGRAM_URL = "https://instagram.com/manuela.chogan"; // TODO
 
 // E-Mail.
 export const EMAIL = "hallo@manuela-chogan.de"; // TODO
+
+// Offizielle Chogan-Seiten (zum Verlinken – „mehr über Chogan").
+export const CHOGAN_HOME_URL = "https://www.chogangroupspa.com/";
+export const CHOGAN_OLFAZETA_URL = "https://www.chogangroupspa.com/olfazeta/";
+export const CHOGAN_CERT_URL =
+  "https://www.chogangroup.com/content.php?id=certificazioni"; // TODO: vor Go-Live prüfen, ob erreichbar
+// Unabhängiger Beleg der Bio-Zertifizierung (Biocertitalia-Eintrag, Chogan Group s.r.l. – IT 068 BC).
+export const BIOCERT_PROOF_URL =
+  "https://www.biocertitalia.com/it/component/content/article/34-aziende-certificate-cosmesi/136-chogan.html";
