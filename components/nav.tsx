@@ -195,24 +195,24 @@ export function Nav() {
               <button
                 aria-label="Schließen"
                 onClick={() => setOpen(false)}
-                className="font-mono text-[0.8rem] text-espresso/70"
+                className="-m-2 p-2 font-mono text-[0.9rem] text-espresso/70 transition-colors hover:text-espresso"
               >
                 ✕
               </button>
             </div>
 
-            <nav className="mt-auto flex flex-col gap-6">
+            <nav className="mt-14 flex flex-col gap-7">
               {t.nav.links.map((l, i) => (
                 <motion.div
                   key={l.href}
                   initial={{ opacity: 0, y: 18 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + i * 0.07, duration: 0.7, ease: EASE }}
+                  transition={{ delay: 0.12 + i * 0.07, duration: 0.7, ease: EASE }}
                 >
                   <Link
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="font-display text-4xl font-light text-espresso"
+                    className="link-underline font-display text-[2.4rem] font-light leading-none text-espresso"
                   >
                     {l.label}
                   </Link>
@@ -220,17 +220,19 @@ export function Nav() {
               ))}
             </nav>
 
-            <div className="mt-10 flex items-center justify-between">
-              <a
-                href={CHOGAN_REGISTER_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
-                className="btn btn-primary"
-              >
-                {t.nav.cta} <span className="arrow" aria-hidden>→</span>
-              </a>
-              <LangToggle />
+            <div className="mt-auto border-t border-greige/25 pt-8">
+              <div className="flex items-center justify-between gap-4">
+                <a
+                  href={CHOGAN_REGISTER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="btn btn-primary"
+                >
+                  {t.nav.cta} <span className="arrow" aria-hidden>→</span>
+                </a>
+                <LangToggle />
+              </div>
             </div>
           </motion.div>
         )}
