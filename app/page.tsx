@@ -5,6 +5,7 @@ import { Start } from "@/components/sections/start";
 import { CtaBand } from "@/components/sections/cta-band";
 import { WhyChogan } from "@/components/sections/why-chogan";
 import { Offerings } from "@/components/sections/offerings";
+import { HowItWorks } from "@/components/sections/how-it-works";
 import { Values } from "@/components/sections/values";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Register } from "@/components/sections/register";
@@ -21,6 +22,7 @@ export default function Home() {
       <WhyChogan />
       <Offerings />
       <CtaBand variant="register" />
+      <HowItWorks />
       <Values />
       <Testimonials />
       <Register />

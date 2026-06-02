@@ -106,6 +106,17 @@ const de = {
     cta: "Partnerin werden",
     ctaNote: "Kostenlos & unverbindlich · ich begleite dich",
   },
+  howItWorks: {
+    eyebrow: "Wie Chogan funktioniert",
+    h2: ["Du wächst, indem du ", "anderen hilfst", "."],
+    sub: "Kein Verkaufsdruck, kein undurchsichtiges System. Chogan ist einfach: Du nutzt und empfiehlst gute Produkte und du hilfst denen, die auch starten wollen. Je mehr du andere wirklich weiterbringst, desto mehr trägt es auch dich.",
+    steps: [
+      { n: "01", title: "Du nutzt, was du liebst", text: "Du startest mit Düften und Pflege in Designer-Qualität, die du selbst gern verwendest und mit gutem Gewissen weitergibst." },
+      { n: "02", title: "Du hilfst anderen weiter", text: "Will jemand auch einsteigen, zeigst du ihr den Weg, so wie ich ihn dir zeige. Kein Druck, echte Hilfe." },
+      { n: "03", title: "Ihr wachst gemeinsam", text: "Wenn dein Team vorankommt, wächst dein Einkommen mit. Du verdienst, weil du anderen wirklich weitergeholfen hast." },
+    ],
+    principle: ["Wenn du anderen hilfst, ", "bekommst du immer etwas Gutes zurück", "."],
+  },
   marquee: [
     "Beauty, Düfte und Lifestyle",
     "Ein Nebeneinkommen, das zu dir passt",
@@ -346,6 +357,17 @@ const en: typeof de = {
     ],
     cta: "Become a partner",
     ctaNote: "Free & no obligation · I'll guide you",
+  },
+  howItWorks: {
+    eyebrow: "How Chogan works",
+    h2: ["You grow by ", "helping others", "."],
+    sub: "No sales pressure, no opaque system. Chogan is simple: you use and recommend good products, and you help those who want to start too. The more you genuinely move others forward, the more it carries you as well.",
+    steps: [
+      { n: "01", title: "You use what you love", text: "You start with fragrances and care in designer quality that you enjoy yourself and pass on with a clear conscience." },
+      { n: "02", title: "You help others forward", text: "If someone wants to start too, you show them the way, just as I show you. No pressure, real help." },
+      { n: "03", title: "You grow together", text: "When your team moves forward, your income grows with it. You earn because you genuinely helped others." },
+    ],
+    principle: ["When you help others, ", "you always get something good back", "."],
   },
   marquee: [
     "Beauty, fragrances and lifestyle",
