@@ -21,7 +21,7 @@ export default function Home() {
       <CtaBand variant="register" />
       <WhyChogan />
       <Offerings />
-      <CtaBand variant="register" />
+      <CtaBand variant="register2" />
       <HowItWorks />
       <Values />
       <Testimonials />

@@ -85,6 +85,13 @@ const de = {
       cta: "Jetzt kostenlos registrieren",
       note: "Direkt bei Chogan · keine Kosten",
     },
+    register2: {
+      eyebrow: "Bereit?",
+      h2: ["Leg jetzt deinen ", "Zugang an", "."],
+      sub: "Du hast gesehen, wie es läuft. Der Einstieg ist kostenlos und in zwei Minuten erledigt. Den Rest gehen wir zusammen.",
+      cta: "Kostenlos starten",
+      note: "Kein Abo · keine Mindestabnahme",
+    },
     bewerben: {
       eyebrow: "1:1 Mentoring",
       h2: ["Ernsthaft aufbauen? ", "Bewirb dich", "."],
@@ -336,6 +343,13 @@ const en: typeof de = {
       sub: "Directly with Chogan, in two minutes. No subscription, no minimum order. The only risk is not starting.",
       cta: "Register for free now",
       note: "Directly with Chogan · no cost",
+    },
+    register2: {
+      eyebrow: "Ready?",
+      h2: ["Set up your ", "access now", "."],
+      sub: "You've seen how it works. Getting started is free and takes two minutes. We'll do the rest together.",
+      cta: "Start for free",
+      note: "No subscription · no minimum order",
     },
     bewerben: {
       eyebrow: "1:1 mentoring",

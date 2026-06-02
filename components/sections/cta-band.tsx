@@ -11,10 +11,14 @@ import { CHOGAN_REGISTER_URL } from "@/lib/links";
  * variant "bewerben" → 1:1 Mentoring, führt zu /kontakt.
  * data-nav="dark" → der scrollabhängige Header invertiert hier automatisch.
  */
-export function CtaBand({ variant }: { variant: "register" | "bewerben" }) {
+export function CtaBand({
+  variant,
+}: {
+  variant: "register" | "register2" | "bewerben";
+}) {
   const { t } = useLang();
   const c = t.ctaBand[variant];
-  const isRegister = variant === "register";
+  const isRegister = variant !== "bewerben";
 
   return (
     <section data-nav="dark" className="bg-noir py-16 text-ivory md:py-24">
