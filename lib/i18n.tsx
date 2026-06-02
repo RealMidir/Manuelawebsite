@@ -35,6 +35,8 @@ const de = {
     cta1: "Kostenlos registrieren",
     cta2: "Dein Weg ansehen",
     note: "Direkt bei Chogan · kein Risiko · in deinem Tempo",
+    mentoring: "Du willst ernsthaft aufbauen?",
+    mentoringCta: "1:1 Mentoring",
     kredo: "„Düfte, die erinnern. Frauen, die wachsen.“",
     imgLabel: "Parfum-Flakon auf warmem Marmor",
   },
@@ -209,6 +211,7 @@ const de = {
     kicker: ["Nicht gegen die Riesen. ", "An ihnen vorbei."],
   },
   statement: ["Düfte. Beauty. ", "Business."],
+  statementTop: ["Schön. Ehrlich. ", "Frei."],
   testimonials: {
     eyebrow: "Stimmen",
     h2: ["Worte, die ", "bleiben", "."],
@@ -273,6 +276,8 @@ const en: typeof de = {
     cta1: "Register free",
     cta2: "See your path",
     note: "Directly with Chogan · no risk · at your own pace",
+    mentoring: "Want to build seriously?",
+    mentoringCta: "1:1 mentoring",
     kredo: "“Scents that linger. Women who grow.”",
     imgLabel: "Perfume bottle on warm marble",
   },
@@ -447,6 +452,7 @@ const en: typeof de = {
     kicker: ["Not against the giants. ", "Right past them."],
   },
   statement: ["Scents. Beauty. ", "Business."],
+  statementTop: ["Beautiful. Honest. ", "Free."],
   testimonials: {
     eyebrow: "Voices",
     h2: ["Words that ", "stay", "."],

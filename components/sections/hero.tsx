@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PlaceholderImage } from "@/components/ui/placeholder-image";
 import { useLang } from "@/lib/i18n";
@@ -76,6 +77,19 @@ export function Hero() {
 
           <motion.p variants={up} className="mono-label mt-10 text-clay/70">
             {h.note}
+          </motion.p>
+
+          <motion.p
+            variants={up}
+            className="mt-4 text-[0.85rem] font-light text-mushroom/75"
+          >
+            {h.mentoring}{" "}
+            <Link
+              href="/dein-weg"
+              className="link-underline font-medium text-clay"
+            >
+              {h.mentoringCta} →
+            </Link>
           </motion.p>
         </motion.div>
 

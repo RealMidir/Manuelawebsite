@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { Marquee } from "@/components/sections/marquee";
+import { BrandStatementTop } from "@/components/sections/brand-statement-top";
 import { Start } from "@/components/sections/start";
 import { CtaBand } from "@/components/sections/cta-band";
 import { WhyChogan } from "@/components/sections/why-chogan";
@@ -14,10 +15,10 @@ export default function Home() {
     <>
       <Hero />
       <Marquee />
+      <BrandStatementTop />
       <Start />
       <CtaBand variant="register" />
       <WhyChogan />
-      <CtaBand variant="bewerben" />
       <Offerings />
       <CtaBand variant="register" />
       <Values />
