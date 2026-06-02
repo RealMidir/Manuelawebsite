@@ -201,6 +201,13 @@ const de = {
     trust: ["Persönlich erreichbar", "Echte Hilfe, kein Funnel", "In deinem Tempo"],
     imgLabel: "Manuela · Porträt folgt",
   },
+  manifesto: {
+    eyebrow: "Warum gerade jetzt",
+    lead: "Gegen die großen Beauty-Konzerne kommt man nicht an? Stimmt. Wenn man ihr Spiel spielt.",
+    punch: "Also spiel es nicht.",
+    sub: "Werbebudgets, Regalmeter, Markenaufschlag, da gewinnst du nie. Chogan geht den anderen Weg: Designer-Qualität aus Italien, direkt von Mensch zu Mensch, ohne Drogerie-Krieg. So steigen ganz normale Frauen und Männer in die Beauty-Nische ein.",
+    kicker: ["Nicht gegen die Riesen. ", "An ihnen vorbei."],
+  },
   statement: ["Düfte. Beauty. ", "Business."],
   testimonials: {
     eyebrow: "Stimmen",
@@ -431,6 +438,13 @@ const en: typeof de = {
     role: "Manuela · Chogan Partner & Mentor",
     trust: ["Personally reachable", "Real help, not a funnel", "At your own pace"],
     imgLabel: "Manuela · portrait coming",
+  },
+  manifesto: {
+    eyebrow: "Why now",
+    lead: "You can't take on the big beauty corporations? True. If you play their game.",
+    punch: "So don't play it.",
+    sub: "Ad budgets, shelf space, brand markup, you'll never win there. Chogan takes the other path: designer quality from Italy, person to person, without the drugstore war. That's how everyday women and men step into the beauty niche.",
+    kicker: ["Not against the giants. ", "Right past them."],
   },
   statement: ["Scents. Beauty. ", "Business."],
   testimonials: {
