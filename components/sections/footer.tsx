@@ -62,9 +62,9 @@ export function Footer() {
           <span>© {new Date().getFullYear()} Manuela × Chogan · {t.footer.rights}</span>
           <div className="flex items-center gap-7">
             {t.footer.legal.map((l) => (
-              <a key={l.label} href={l.href} className="transition-colors hover:text-ivory/70">
+              <Link key={l.label} href={l.href} className="transition-colors hover:text-ivory/70">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

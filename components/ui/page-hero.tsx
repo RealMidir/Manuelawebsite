@@ -3,7 +3,7 @@
 import { Reveal } from "@/components/ui/reveal";
 import { useLang } from "@/lib/i18n";
 
-type PageKey = "deinweg" | "duefte" | "ueber" | "kontakt";
+type PageKey = "deinweg" | "duefte" | "ueber" | "kontakt" | "impressum" | "datenschutz";
 
 export function PageHero({ pageKey }: { pageKey: PageKey }) {
   const { t } = useLang();

@@ -262,8 +262,8 @@ const de = {
     navLabel: "Navigation",
     followLabel: "Folgen",
     legal: [
-      { label: "Impressum", href: "#" },
-      { label: "Datenschutz", href: "#" },
+      { label: "Impressum", href: "/impressum" },
+      { label: "Datenschutz", href: "/datenschutz" },
     ],
     rights: "Alle Rechte vorbehalten",
   },
@@ -273,6 +273,8 @@ const de = {
     partnerin: { eyebrow: "Dein Weg", title: ["Werde Partnerin an ", "meiner Seite", "."] },
     ueber: { eyebrow: "Über mich", title: ["Schön, dass du ", "hier", " bist."] },
     kontakt: { eyebrow: "Kontakt", title: ["Lass uns ", "sprechen", "."] },
+    impressum: { eyebrow: "Rechtliches", title: ["", "Impressum", ""] },
+    datenschutz: { eyebrow: "Rechtliches", title: ["", "Datenschutz", ""] },
     backHome: "Zur Startseite",
   },
 };
@@ -521,8 +523,8 @@ const en: typeof de = {
     navLabel: "Navigation",
     followLabel: "Follow",
     legal: [
-      { label: "Imprint", href: "#" },
-      { label: "Privacy", href: "#" },
+      { label: "Imprint", href: "/impressum" },
+      { label: "Privacy", href: "/datenschutz" },
     ],
     rights: "All rights reserved",
   },
@@ -532,6 +534,8 @@ const en: typeof de = {
     partnerin: { eyebrow: "Your path", title: ["Become a partner by ", "my side", "."] },
     ueber: { eyebrow: "About me", title: ["Lovely that you're ", "here", "."] },
     kontakt: { eyebrow: "Contact", title: ["Let's ", "talk", "."] },
+    impressum: { eyebrow: "Legal", title: ["", "Imprint", ""] },
+    datenschutz: { eyebrow: "Legal", title: ["", "Privacy", ""] },
     backHome: "Back to home",
   },
 };
