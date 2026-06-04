@@ -43,7 +43,7 @@ const de = {
   start: {
     eyebrow: "Warum überhaupt",
     old: "Die meisten denken: ein eigenes Nebeneinkommen heißt, das Leben umkrempeln, hohes Risiko, alles allein durchziehen.",
-    new: ["So muss es nicht sein. Du startest klein, mit Beauty und Düften, die du liebst, und ", "jemandem an deiner Seite", "."],
+    new: ["Es geht auch anders. Du fängst klein an, mit Düften, die du liebst, und ", "ich gehe mit dir", "."],
     sub: "Du musst nicht alles auf eine Karte setzen, und Verkaufsdruck gibt es bei mir nicht. Vor allem aber machst du es nicht allein, so wie ich damals.",
   },
   register: {
@@ -304,7 +304,7 @@ const en: typeof de = {
   start: {
     eyebrow: "Why at all",
     old: "Most people think: a second income means turning your life upside down, high risk, doing it all alone.",
-    new: ["It doesn't have to be that way. You start small, with beauty and fragrances you love, and ", "someone by your side", "."],
+    new: ["There's another way. You start small, with fragrances you love, and ", "I'm right there with you", "."],
     sub: "You don't have to bet everything on one move, and I won't pressure you to sell. Above all, you're not doing it alone, the way I was back then.",
   },
   register: {
