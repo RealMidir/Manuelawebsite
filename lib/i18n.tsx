@@ -228,7 +228,7 @@ const de = {
     sub: "Werbebudgets, Regalmeter, Markenaufschlag, da gewinnst du nie. Chogan geht den anderen Weg: Designer-Qualität aus Italien, direkt von Mensch zu Mensch, ohne Drogerie-Krieg. So steigen ganz normale Frauen und Männer in die Beauty-Nische ein.",
     kicker: ["Nicht gegen die Riesen. ", "An ihnen vorbei."],
   },
-  statement: ["Schön. Ehrlich. ", "Frei."],
+  statement: ["Düfte. Beauty. ", "Business."],
   statementTop: ["Düfte. Beauty. ", "Business."],
   testimonials: {
     eyebrow: "Stimmen",
@@ -489,7 +489,7 @@ const en: typeof de = {
     sub: "Ad budgets, shelf space, brand markup, you'll never win there. Chogan takes the other path: designer quality from Italy, person to person, without the drugstore war. That's how everyday women and men step into the beauty niche.",
     kicker: ["Not against the giants. ", "Right past them."],
   },
-  statement: ["Beautiful. Honest. ", "Free."],
+  statement: ["Scents. Beauty. ", "Business."],
   statementTop: ["Scents. Beauty. ", "Business."],
   testimonials: {
     eyebrow: "Voices",

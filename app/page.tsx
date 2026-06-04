@@ -9,7 +9,6 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { Values } from "@/components/sections/values";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Register } from "@/components/sections/register";
-import { BrandStatement } from "@/components/sections/brand-statement";
 
 export default function Home() {
   return (
@@ -26,7 +25,6 @@ export default function Home() {
       <Values />
       <Testimonials />
       <Register />
-      <BrandStatement />
     </>
   );
 }
