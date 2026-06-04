@@ -31,7 +31,7 @@ const de = {
   hero: {
     eyebrow: "Beauty · Düfte · Lifestyle",
     h1: ["Mit Beauty, Düften und Lifestyle ", "ein Nebeneinkommen", " aufbauen", "", "."],
-    sub: "Schön, dass du da bist. Du startest mit Chogan komplett kostenlos: Düfte in Designer-Qualität, ein Einstieg ohne Risiko und meine Tipps und Hilfe auf dem ganzen Weg.",
+    sub: "Schön, dass du da bist. Du startest mit Chogan komplett kostenlos, mit Düften in Designer-Qualität und ohne Risiko. Und ich gebe dir meine Tipps und helfe dir auf dem ganzen Weg.",
     cta1: "Kostenlos registrieren",
     cta2: "Dein Weg ansehen",
     note: "Direkt bei Chogan · kein Risiko · in deinem Tempo",
@@ -42,14 +42,14 @@ const de = {
   },
   start: {
     eyebrow: "Warum überhaupt",
-    old: "Die meisten denken: ein eigenes Nebeneinkommen heißt alles umkrempeln, hohes Risiko, alles allein durchziehen.",
+    old: "Die meisten denken: ein eigenes Nebeneinkommen heißt, das Leben umkrempeln, hohes Risiko, alles allein durchziehen.",
     new: ["So muss es nicht sein. Du startest klein, mit Beauty und Düften, die du liebst, und ", "jemandem an deiner Seite", "."],
-    sub: "Kein Alles-oder-nichts. Kein Verkaufsdruck. Und vor allem nicht allein, so wie ich damals.",
+    sub: "Du musst nicht alles auf eine Karte setzen, und Verkaufsdruck gibt es bei mir nicht. Vor allem aber machst du es nicht allein, so wie ich damals.",
   },
   register: {
     eyebrow: "Kostenlos starten",
     h2: ["Registriere dich kostenlos ", "bei Chogan", "."],
-    sub: "Dein Einstieg läuft direkt über Chogan und kostet dich nichts. Kein Abo, keine Mindestabnahme, keine versteckten Kosten. Du legst dir nur deinen Zugang an, der Rest kommt von mir.",
+    sub: "Dein Einstieg läuft direkt über Chogan und kostet dich nichts. Du brauchst kein Abo und musst nichts abnehmen, versteckte Kosten gibt es auch keine. Du legst dir nur deinen Zugang an, der Rest kommt von mir.",
     why: [
       { title: "Warum kostenlos?", text: "Chogan verdient an den Produkten, nicht an deiner Anmeldung. Darum kannst du ohne Risiko reinschnuppern." },
       { title: "Warum über mich?", text: "Ich verdiene nur, wenn du wirklich vorankommst. Deshalb helfe ich dir ehrlich, statt dich mit einem Link allein zu lassen." },
@@ -106,7 +106,7 @@ const de = {
     sub: "Warum ich Chogan gewählt habe und wie ich arbeite. Daran kannst du mich messen.",
     items: [
       { title: "Ehrlichkeit vor Hype", text: "Keine großen Versprechen. Ich sage dir vorher, worauf du dich einlässt und was realistisch ist." },
-      { title: "Hilfe vor Verkauf", text: "Ich verdiene erst, wenn du vorankommst. Also helfe ich dir wirklich, statt dich mit einem Link allein zu lassen." },
+      { title: "Hilfe vor Verkauf", text: "Ich verdiene erst, wenn du vorankommst. Also bleibe ich dran, bis es bei dir läuft." },
       { title: "Qualität, die man riecht", text: "Chogan ist Made in Italy, bio-zertifiziert und hochkonzentriert. Hinter dem, was du weitergibst, kannst du stehen." },
       { title: "Wachstum für alle", text: "Ein Weg, der für Frauen und Männer offen ist. In deinem Tempo, mit einer Gruppe im Rücken." },
     ],
@@ -116,7 +116,7 @@ const de = {
   howItWorks: {
     eyebrow: "Wie Chogan funktioniert",
     h2: ["Du wächst, indem du ", "anderen hilfst", "."],
-    sub: "Kein Verkaufsdruck, kein undurchsichtiges System. Chogan ist einfach: Du nutzt und empfiehlst gute Produkte und du hilfst denen, die auch starten wollen. Je mehr du andere wirklich weiterbringst, desto mehr trägt es auch dich.",
+    sub: "Chogan ist kein undurchsichtiges System, und niemand setzt dich unter Druck. Es ist eigentlich ganz einfach: Du nutzt und empfiehlst gute Produkte und hilfst denen, die auch starten wollen. Je mehr du andere wirklich weiterbringst, desto mehr trägt es auch dich.",
     steps: [
       { n: "01", title: "Du nutzt, was du liebst", text: "Du startest mit Düften und Pflege in Designer-Qualität, die du selbst gern verwendest und mit gutem Gewissen weitergibst." },
       { n: "02", title: "Du hilfst anderen weiter", text: "Will jemand auch einsteigen, zeigst du ihr den Weg, so wie ich ihn dir zeige. Kein Druck, echte Hilfe." },
@@ -133,7 +133,7 @@ const de = {
   offerings: {
     eyebrow: "Warum mit mir",
     h2: ["Was du an meiner Seite ", "bekommst", "."],
-    sub: "Kein anonymer Link, kein Sich-selbst-überlassen. So helfe ich dir vom ersten Tag an.",
+    sub: "Du bekommst keinen anonymen Link und wirst nicht dir selbst überlassen. So helfe ich dir vom ersten Tag an.",
     more: "Mehr",
     items: [
       { tag: "01", title: "Tipps und Hilfe von mir", text: "Ich bin erreichbar, per WhatsApp und im Call. Du fragst, ich antworte, wir gehen die Schritte zusammen." },
@@ -228,8 +228,8 @@ const de = {
     sub: "Werbebudgets, Regalmeter, Markenaufschlag, da gewinnst du nie. Chogan geht den anderen Weg: Designer-Qualität aus Italien, direkt von Mensch zu Mensch, ohne Drogerie-Krieg. So steigen ganz normale Frauen und Männer in die Beauty-Nische ein.",
     kicker: ["Nicht gegen die Riesen. ", "An ihnen vorbei."],
   },
-  statement: ["Düfte. Beauty. ", "Business."],
-  statementTop: ["Schön. Ehrlich. ", "Frei."],
+  statement: ["Schön. Ehrlich. ", "Frei."],
+  statementTop: ["Düfte. Beauty. ", "Business."],
   testimonials: {
     eyebrow: "Stimmen",
     h2: ["Worte, die ", "bleiben", "."],
@@ -292,7 +292,7 @@ const en: typeof de = {
   hero: {
     eyebrow: "Beauty · Fragrances · Lifestyle",
     h1: ["Build a ", "second income", " with beauty, fragrances and lifestyle", "", "."],
-    sub: "Lovely that you're here. You start with Chogan completely free: fragrances in designer quality, a risk-free entry, and my tips and help all along the way.",
+    sub: "Lovely that you're here. You start with Chogan completely free, with fragrances in designer quality and no risk. And I give you my tips and help all along the way.",
     cta1: "Register free",
     cta2: "See your path",
     note: "Directly with Chogan · no risk · at your own pace",
@@ -303,14 +303,14 @@ const en: typeof de = {
   },
   start: {
     eyebrow: "Why at all",
-    old: "Most people think: a second income means turning everything upside down, high risk, doing it all alone.",
+    old: "Most people think: a second income means turning your life upside down, high risk, doing it all alone.",
     new: ["It doesn't have to be that way. You start small, with beauty and fragrances you love, and ", "someone by your side", "."],
-    sub: "No all-or-nothing. No sales pressure. And above all not alone, the way I was back then.",
+    sub: "You don't have to bet everything on one move, and I won't pressure you to sell. Above all, you're not doing it alone, the way I was back then.",
   },
   register: {
     eyebrow: "Start free",
     h2: ["Register for free ", "with Chogan", "."],
-    sub: "Your entry runs directly through Chogan and costs you nothing. No subscription, no minimum order, no hidden costs. You just set up your access, the rest comes from me.",
+    sub: "Your entry runs directly through Chogan and costs you nothing. You don't need a subscription and there's no minimum order, and no hidden costs either. You just set up your access, the rest comes from me.",
     why: [
       { title: "Why free?", text: "Chogan earns on the products, not on your sign-up. So you can explore with no risk." },
       { title: "Why through me?", text: "I only earn when you actually move forward. So I help you honestly instead of leaving you alone with a link." },
@@ -367,7 +367,7 @@ const en: typeof de = {
     sub: "Why I chose Chogan and how I work. Hold me to it.",
     items: [
       { title: "Honesty over hype", text: "No big promises. I tell you upfront what you're getting into and what's realistic." },
-      { title: "Help before selling", text: "I only earn once you move forward. So I genuinely help you instead of leaving you alone with a link." },
+      { title: "Help before selling", text: "I only earn once you move forward. So I stay with it until things really click for you." },
       { title: "Quality you can smell", text: "Chogan is Made in Italy, organic-certified and highly concentrated. You can stand behind what you pass on." },
       { title: "Growth for everyone", text: "A path open to women and men. At your own pace, with a group behind you." },
     ],
@@ -377,7 +377,7 @@ const en: typeof de = {
   howItWorks: {
     eyebrow: "How Chogan works",
     h2: ["You grow by ", "helping others", "."],
-    sub: "No sales pressure, no opaque system. Chogan is simple: you use and recommend good products, and you help those who want to start too. The more you genuinely move others forward, the more it carries you as well.",
+    sub: "Chogan isn't an opaque system, and nobody puts you under pressure. It's actually quite simple: you use and recommend good products, and you help those who want to start too. The more you genuinely move others forward, the more it carries you as well.",
     steps: [
       { n: "01", title: "You use what you love", text: "You start with fragrances and care in designer quality that you enjoy yourself and pass on with a clear conscience." },
       { n: "02", title: "You help others forward", text: "If someone wants to start too, you show them the way, just as I show you. No pressure, real help." },
@@ -394,7 +394,7 @@ const en: typeof de = {
   offerings: {
     eyebrow: "Why with me",
     h2: ["What you get ", "by my side", "."],
-    sub: "No anonymous link, no being left to figure it out alone. This is how I help you from day one.",
+    sub: "You don't get an anonymous link, and you're not left to figure it out alone. This is how I help you from day one.",
     more: "More",
     items: [
       { tag: "01", title: "My tips and help", text: "I'm reachable, on WhatsApp and on calls. You ask, I answer, we take the steps together." },
@@ -489,8 +489,8 @@ const en: typeof de = {
     sub: "Ad budgets, shelf space, brand markup, you'll never win there. Chogan takes the other path: designer quality from Italy, person to person, without the drugstore war. That's how everyday women and men step into the beauty niche.",
     kicker: ["Not against the giants. ", "Right past them."],
   },
-  statement: ["Scents. Beauty. ", "Business."],
-  statementTop: ["Beautiful. Honest. ", "Free."],
+  statement: ["Beautiful. Honest. ", "Free."],
+  statementTop: ["Scents. Beauty. ", "Business."],
   testimonials: {
     eyebrow: "Voices",
     h2: ["Words that ", "stay", "."],
